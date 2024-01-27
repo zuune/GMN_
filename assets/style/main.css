@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-bottom: 2000px;
+}
+
+nav {
+    z-index: 1000; 
+}
+
+.video-header {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+video {
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3); 
+    overflow: hidden; 
+}
+
+/* Header */
+.text h2.header {
+    color: var(--BG, #FCFCFC);
+    text-shadow: 0px 2.767px 2.214px rgba(0, 0, 0, 0.02), 0px 6.65px 5.32px rgba(0, 0, 0, 0.03), 0px 12.522px 10.017px rgba(0, 0, 0, 0.04), 0px 22.336px 17.869px rgba(0, 0, 0, 0.04), 0px 41.778px 33.422px rgba(0, 0, 0, 0.05), 0px 100px 80px rgba(0, 0, 0, 0.07);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 2vw;
+}
+
+.text p {
+    color: var(--BG, #FCFCFC);
+    text-shadow: 0px 2.767px 2.214px rgba(0, 0, 0, 0.02), 0px 6.65px 5.32px rgba(0, 0, 0, 0.03), 0px 12.522px 10.017px rgba(0, 0, 0, 0.04), 0px 22.336px 17.869px rgba(0, 0, 0, 0.04), 0px 41.778px 33.422px rgba(0, 0, 0, 0.05), 0px 100px 80px rgba(0, 0, 0, 0.07);
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 2vw;
+}
+
+.video-header .overlay .text {
+    position: absolute;
+    max-width: 80%;
+    bottom: 100px;
+    left: 50px;
+    color: white; /* Adjust the text color as needed */
+}
+
+.data {
+    position: absolute;
+    right: 50px;
+    bottom: 10%;
+    width: 282px;
+    height: 586px;
+    z-index: 10;
+    flex-shrink: 0;
+    border-radius: 36px;
+    background: #FCFCFC;
+    box-shadow: 0px 2.613px 2.09px 0px rgba(0, 0, 0, 0.02), 0px 6.278px 5.023px 0px rgba(0, 0, 0, 0.03), 0px 11.821px 9.457px 0px rgba(0, 0, 0, 0.04), 0px 21.088px 16.87px 0px rgba(0, 0, 0, 0.04), 0px 39.442px 31.554px 0px rgba(0, 0, 0, 0.05), 0px 94.409px 75.527px 0px rgba(0, 0, 0, 0.07);
+}
+
+.data img {
+    width: 53.6px;
+    height: 40.2px;
+    flex-shrink: 0;
+}
+
+.data .desc h4 {
+    color: var(--Blue, #0395D9);
+    text-align: justify;
+    /* leading-trim: both;
+    text-edge: cap; */
+    font-family: Roboto;
+    font-size: 23.04px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50.4px; /* 218.75% */
+}
+
+.data ul li {
+    width: auto;
+}
+
+.data ul li img {
+    padding-right: 15px;
+}
+
+.value h3 {
+    color: #E28D26;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 70px; /* 145.833% */
+}
+
+.value p {
+    color:  #B8B8B8;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.kotak {
+    border-radius: 8px;
+    background: #E28D26;
+    box-shadow: 0px 2.767px 2.214px 0px rgba(0, 0, 0, 0.02), 0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.03), 0px 12.522px 10.017px 0px rgba(0, 0, 0, 0.04), 0px 22.336px 17.869px 0px rgba(0, 0, 0, 0.04), 0px 41.778px 33.422px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 397px;
+    height: 327px;
+    flex-shrink: 0;
+    transition: .2s;
+}
+
+.kotak .isi img{
+    width: 89px;
+    height: 81.796px;
+    flex-shrink: 0;
+}
+
+
+.kotak .isi p {
+    color: var(--BG, #FCFCFC);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.kotak:hover {
+    background-color: #432e14;
+}
+
+/* Responsive */
+
+/* Header */
+@media screen and (max-width: 1640px ) {
+    .value h3 {
+        color: #E28D26;
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 38px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 70px; /* 145.833% */
+    }
+    .value p {
+        color:  #B8B8B8;
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 28px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media screen and (max-width: 1640px ) {
+   
+}
+
+@media screen and (max-width: 1281px ) {
+
+}
