@@ -330,6 +330,11 @@ video {
         background-repeat: no-repeat;
     }
 
+    .service-card {
+        padding: 30px;
+
+    }
+
     .service-desc .kotak {
         width: 400px;
         height: 176px;
@@ -431,5 +436,9 @@ video {
 
     .service-desc .row .kotak:last-child {
         margin-top: 1.5rem;
+    }
+
+    .service-card .image {
+        height: 300px;
     }
 }
