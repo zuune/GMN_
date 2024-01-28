@@ -170,34 +170,266 @@ video {
     background-color: #432e14;
 }
 
+/* services */
+
+.service-desc .title h5 {
+    color: var(--Blue, #0395D9);
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px; /* 218.75% */
+}
+.service-desc .subtitle p {
+    color: var(--Orange, #E28D26);
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 70px; /* 145.833% */
+}
+
+.service-desc .kotak {
+    border-radius: 8px;
+    background: #E28D26;
+    box-shadow: 0px 2.767px 2.214px 0px rgba(0, 0, 0, 0.02), 0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.03), 0px 12.522px 10.017px 0px rgba(0, 0, 0, 0.04), 0px 22.336px 17.869px 0px rgba(0, 0, 0, 0.04), 0px 41.778px 33.422px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 432px;
+    height: 176px;
+    flex-shrink: 0;
+    transition: .2s;
+    cursor: pointer;
+}
+.service-desc .kotak:hover {
+    background-color: #432e14;
+}
+
+.service-card {
+    padding: 50px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--White, #F8F8F8);
+    box-shadow: 0px 2.767px 2.214px 0px rgba(0, 0, 0, 0.02), 0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.03), 0px 12.522px 10.017px 0px rgba(0, 0, 0, 0.04), 0px 22.336px 17.869px 0px rgba(0, 0, 0, 0.04), 0px 41.778px 33.422px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+}
+
+.service-card .image {
+    width: 559px;
+    height: 763px;
+    flex-shrink: 0; 
+    border-radius: 8px;
+    background-image: url('../img/service.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-desc .kotak p {
+    color: var(--White, #F8F8F8);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 70px; /* 250% */
+}
+
 /* Responsive */
 
 /* Header */
-@media screen and (max-width: 1640px ) {
+@media screen and (max-width: 1700px ) {
     .value h3 {
         color: #E28D26;
         text-align: justify;
         font-family: Roboto;
-        font-size: 38px;
+        font-size: 28px;
         font-style: italic;
         font-weight: 600;
-        line-height: 70px; /* 145.833% */
+        line-height: 40px; /* 145.833% */
     }
     .value p {
         color:  #B8B8B8;
         text-align: justify;
         font-family: Roboto;
-        font-size: 28px;
+        font-size: 20px;
         font-style: italic;
         font-weight: 400;
         line-height: normal;
     }
+
+    .kotak .isi p {
+    font-size: 23px;
+
+    }
+
+    .service-desc .kotak p {
+        color: var(--White, #F8F8F8);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 70px; /* 250% */
+    }
+
+    .service-desc .title h5 {
+        color: var(--Blue, #0395D9);
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 70px; /* 218.75% */
+    }
+    .service-desc .subtitle p {
+        color: var(--Orange, #E28D26);
+        text-align: left;
+        font-family: Roboto;
+        font-size: 29px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 40px; /* 145.833% */
+    }
+
+
+
+    .service-card {
+        margin-bottom: 2rem;
+
+    }
+
+    .service-card .image {
+        width: 460px;
+        height: 663px;
+        flex-shrink: 0; 
+        border-radius: 8px;
+        background-image: url('../img/service.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
 }
 
-@media screen and (max-width: 1640px ) {
-   
+
+/* Header */
+@media screen and (max-width: 1641px ) {
+
+    .service-card .image {
+        width: 460px;
+        height: 663px;
+        flex-shrink: 0; 
+        border-radius: 8px;
+        background-image: url('../img/service.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .service-desc .kotak {
+        width: 400px;
+        height: 176px;
+    }
+    
 }
+
 
 @media screen and (max-width: 1281px ) {
 
+}
+
+@media screen and (max-width: 920px ) {
+    .value h3 {
+        color: #E28D26;
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 40px; /* 145.833% */
+    }
+    .value p {
+        color:  #B8B8B8;
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .service-desc .title h5 {
+        color: var(--Blue, #0395D9);
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 70px; /* 218.75% */
+    }
+    .service-desc .subtitle p {
+        color: var(--Orange, #E28D26);
+        text-align: left;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 30px; /* 145.833% */
+    }
+
+    .service-desc .row .kotak:last-child {
+        margin-top: 1.5rem;
+    }
+
+    .service-card .image {
+        height: 480px;
+    }
+}
+
+@media screen and (max-width: 780px ) {
+    .value h3 {
+        color: #E28D26;
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 40px; /* 145.833% */
+    }
+    .value p {
+        color:  #B8B8B8;
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .service-desc .title h5 {
+        color: var(--Blue, #0395D9);
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 70px; /* 218.75% */
+    }
+    .service-desc .subtitle p {
+        color: var(--Orange, #E28D26);
+        text-align: left;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 30px; /* 145.833% */
+    }
+
+    .service-desc .row .kotak:last-child {
+        margin-top: 1.5rem;
+    }
 }
