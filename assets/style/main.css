@@ -97,7 +97,6 @@ video {
 
 .data .desc h4 {
     color: var(--Blue, #0395D9);
-    text-align: justify;
     /* leading-trim: both;
     text-edge: cap; */
     font-family: Roboto;
@@ -117,7 +116,6 @@ video {
 
 .value h3 {
     color: #E28D26;
-    text-align: justify;
     font-family: Roboto;
     font-size: 40px;
     font-style: italic;
@@ -127,7 +125,6 @@ video {
 
 .value p {
     color:  #B8B8B8;
-    text-align: justify;
     font-family: Roboto;
     font-size: 32px;
     font-style: italic;
@@ -174,7 +171,6 @@ video {
 
 .service-desc .title h5 {
     color: var(--Blue, #0395D9);
-    text-align: justify;
     font-family: Roboto;
     font-size: 32px;
     font-style: normal;
@@ -183,7 +179,6 @@ video {
 }
 .service-desc .subtitle p {
     color: var(--Orange, #E28D26);
-    text-align: justify;
     font-family: Roboto;
     font-size: 48px;
     font-style: italic;
@@ -244,7 +239,6 @@ video {
 @media screen and (max-width: 1700px ) {
     .value h3 {
         color: #E28D26;
-        text-align: justify;
         font-family: Roboto;
         font-size: 28px;
         font-style: italic;
@@ -253,7 +247,6 @@ video {
     }
     .value p {
         color:  #B8B8B8;
-        text-align: justify;
         font-family: Roboto;
         font-size: 20px;
         font-style: italic;
@@ -278,7 +271,6 @@ video {
 
     .service-desc .title h5 {
         color: var(--Blue, #0395D9);
-        text-align: justify;
         font-family: Roboto;
         font-size: 25px;
         font-style: normal;
@@ -350,7 +342,6 @@ video {
 @media screen and (max-width: 920px ) {
     .value h3 {
         color: #E28D26;
-        text-align: justify;
         font-family: Roboto;
         font-size: 24px;
         font-style: italic;
@@ -359,7 +350,6 @@ video {
     }
     .value p {
         color:  #B8B8B8;
-        text-align: justify;
         font-family: Roboto;
         font-size: 18px;
         font-style: italic;
@@ -369,7 +359,6 @@ video {
 
     .service-desc .title h5 {
         color: var(--Blue, #0395D9);
-        text-align: justify;
         font-family: Roboto;
         font-size: 20px;
         font-style: normal;
@@ -398,7 +387,6 @@ video {
 @media screen and (max-width: 780px ) {
     .value h3 {
         color: #E28D26;
-        text-align: justify;
         font-family: Roboto;
         font-size: 24px;
         font-style: italic;
@@ -407,7 +395,6 @@ video {
     }
     .value p {
         color:  #B8B8B8;
-        text-align: justify;
         font-family: Roboto;
         font-size: 18px;
         font-style: italic;
@@ -417,7 +404,6 @@ video {
 
     .service-desc .title h5 {
         color: var(--Blue, #0395D9);
-        text-align: justify;
         font-family: Roboto;
         font-size: 20px;
         font-style: normal;
