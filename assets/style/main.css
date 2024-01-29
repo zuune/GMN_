@@ -233,6 +233,134 @@ video {
     line-height: 70px; /* 250% */
 }
 
+
+/* Projects */
+.projects .head-projects .title h4 {
+    color: var(--Blue, #0395D9);
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px; /* 218.75% */
+}
+
+.projects .head-projects .title a {
+    color: var(--Black, #181818);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px; /* 350% */
+    text-decoration-line: underline;
+}
+
+.projects .subtitle p {
+    color: var(--Orange, #E28D26);
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 70px; /* 145.833% */
+}
+
+.projects .direction .previous.btn img{
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.projects .direction .previous.btn {
+    width: 176px;
+    height: 83px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border: 2px solid var(--Orange, #E28D26);
+}
+
+.projects .direction .previous.btn:hover {
+    background-color: #ffce91;
+}   
+
+.projects .direction .next.btn {
+    color: var(--White, #f8f8f8);
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px; /* 250% */
+    width: 245px;
+    height: 83px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: var(--Orange, #E28D26);
+}
+
+.projects .direction .next.btn:hover {
+    background: var(--Orange, #b06c19);
+
+}
+
+.projects .direction .next.btn img{
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.projects .card {
+    width: 856px;
+    height: 585px;
+    flex-shrink: 0;
+    transform: scale(1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.projects .card:hover {
+    transform: scale(1.03);
+}
+
+.projects .card .card-body {
+    background-color: #E28D26;
+    position: relative;
+}
+
+.projects .card .card-body p {
+    color: var(--BG, #FCFCFC);
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.projects .card .card-body img {
+    width: 23px;
+    height: 32px;
+}
+
+.projects .card .brand .name {
+    position: absolute;
+    bottom: 0;
+    color: var(--BG, #FCFCFC);
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.projects .card .brand .location {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    color: var(--BG, #FCFCFC);
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
 /* Responsive */
 
 /* Header */
