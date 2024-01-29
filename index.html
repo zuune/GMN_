@@ -19,12 +19,27 @@
 
     <!-- Icons Google -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style type="text/css">
+        .projects-container {
+            overflow: hidden;
+        }
+
+        .card-wrapper {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .card {
+            width: 300px;
+            margin: 0 10px;
+        }
+    </style>
 
 </head>
 
 <body class="bg-white">
 
-
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-white py-3">
         <div class="container-fluid ">
             <a class="logo d-flex align-items-center navbar-brand" href="">
@@ -53,21 +68,16 @@
                     </li>
                     <li class="nav-item pe-5 dropdown">
                         <!-- dropdown-toggle -->
-                        <a class="nav-link " href="#" id="productDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link " href="#" id="productDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             Products
                         </a>
-                        <!-- <ul class="dropdown-menu" aria-labelledby="productDropdown">
-                            <li><a class="dropdown-item" href=""></a></li>
-                            <li><a class="dropdown-item" href=""></a></li>
-                            <li><a class="dropdown-item" href=""></a></li>
-                        </ul> -->
-                    </li>
-                    <li class="nav-item pe-5">
-                        <a class="nav-link" href="">Projects</a>
                     </li>
                     <li class="nav-item pe-5">
                         <a class="nav-link" href="">Services</a>
+                    </li>
+                    <li class="nav-item pe-5">
+                        <a class="nav-link" href="">Projects</a>
                     </li>
                     <li class="nav-item pe-5">
                         <a class="nav-link" href="">Articles</a>
@@ -83,13 +93,13 @@
                         <li><a class="dropdown-item" id="lang_eng" style="cursor: pointer;">ENG</a></li>
                         <li><a class="dropdown-item" id="lang_ind" style="cursor: pointer;">IND</a></li>
                     </ul>
-
                 </div>
             </div>
         </div>
     </nav>
-    
 
+
+    <!-- hero -->
     <div class="video-header">
 
         <video autoplay muted loop>
@@ -105,7 +115,7 @@
                 <h2 class="header">PT GERBANG MULTINDO NUSANTARA</h2>
                 <p>
                     A pioneer of renewable energy services in Indonesia.<br>
-                    Established on 1994. 
+                    Established on 1994.
                 </p>
             </div>
 
@@ -139,20 +149,14 @@
                             <p style="margin-top: -1rem;">Estimated Carbon<br>Emission Reduction</p>
                         </div>
                     </li>
-                    <li class="d-sm-flex align-items-center pb-4 mt-2">
-                        <img src="assets/img/Tree.png" alt="">
-                        <div class="desc">
-                            <h4>512.523</h4>
-                            <p style="margin-top: -1rem;">Estimated Trees Planted</p>
-                        </div>
-                    </li>
                 </ul>
             </div>
-            
+
         </div>
 
     </div>
 
+    <!-- about -->
     <div class="container-fluid value" style="margin-top: 8rem;">
         <div class="head d-sm-flex justify-content-between mx-5 align-items-end flex-wrap">
             <h3>Building high-value, cutting-edge<br>
@@ -161,26 +165,26 @@
             <p>By using the services and services we provide,<br>
                 because we;</p>
         </div>
-        <div class="row mt-4 d-flex justify-content-around mx-2 flex-wrap">
-            <div class="kotak col-4 mt-5">
+        <div class="row mt-4 d-flex justify-content-around flex-wrap mx-2">
+            <div class="kotak col-lg-3 mt-5">
                 <div class="isi">
                     <img src="assets/img/value/Vector.png" alt="" class="mb-4">
                     <p>Professional and<br>experiment</p>
                 </div>
             </div>
-            <div class="kotak col-4 mt-5">
+            <div class="kotak col-lg-3 mt-5">
                 <div class="isi">
                     <img src="assets/img/value/Vector-1.png" alt="" class="mb-4">
                     <p>High quality</p>
                 </div>
             </div>
-            <div class="kotak col-4 mt-5">
+            <div class="kotak col-lg-3 mt-5">
                 <div class="isi">
                     <img src="assets/img/value/Vector-2.png" alt="" class="mb-4">
                     <p>Best services</p>
                 </div>
             </div>
-            <div class="kotak col-4 mt-5">
+            <div class="kotak col-lg-3 mt-5">
                 <div class="isi">
                     <img src="assets/img/value/Vector-3.png" alt="" class="mb-4">
                     <p>Putting customers<br>first</p>
@@ -192,64 +196,58 @@
 
     <!-- Services -->
     <div class="container-fluid services" style="margin-top: 15rem;">
-        
-        <div class="d-sm-flex justify-content-between mx-5 flex-wrap">
-            <div class="service-card d-flex justify-content-center align-items-center row">
-                <div class="image col-12"></div>
+
+        <div class="row mx-5 ">
+            <div class="col-lg-5 service-card d-flex justify-content-center align-items-center">
+                <div class="image"></div>
             </div>
-            <div class="service-desc">
-                <div class="title">
-                    <h5>Services</h5>
-                </div>
-                <div class="subtitle">
-                    <p>Some of the activity services that can<br>provide.</p>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-6 kotak me-4">
-                        <p>Engineering</p>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 service-desc mx-auto">
+                <div class="service-text">
+                    <div class="title">
+                        <h5>Services</h5>
                     </div>
-                    <div class="col-6 kotak">
-                        <p>Fabrication</p>
+                    <div class="subtitle">
+                        <p>Some of the activity services that can<br>provide.</p>
                     </div>
                 </div>
-                <div class="row mt-4">
-                    <div class="col-6 kotak me-4">
-                        <p>Contract</p>
+                <div class="service-kotak">
+                    <div class="row mt-4">
+                        <div class="col-lg-5 kotak k-kecil ">
+                            <p>Engineering</p>
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-5 kotak k-kecil">
+                            <p>Fabrication</p>
+                        </div>
                     </div>
-                    <div class="col-6 kotak">
-                        <p>Trading</p>
+                    <div class="row mt-4">
+                        <div class="col-lg-5 kotak k-kecil">
+                            <p>Contract</p>
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-5 kotak k-kecil">
+                            <p>Trading</p>
+                        </div>
                     </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-6 kotak me-4">
-                        <p>Manufacturing</p>
-                    </div>
-                    <div class="col-6 kotak">
-                        <p>Maintenance</p>
+                    <div class="row mt-4">
+                        <div class="col-lg-5 kotak k-kecil">
+                            <p>Manufacturing</p>
+                        </div>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-5 kotak k-kecil">
+                            <p>Maintenance</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </div>
-    
-    
+
+
     </div>
 
-    <style type="text/css">
-        .projects-container {
-            overflow: hidden;
-        }
 
-        .card-wrapper {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-
-        .card {
-            width: 300px; /* Adjust the card width as needed */
-            margin: 0 10px;
-        }
-    </style>
     <!-- Projects -->
     <div class="container-fluid projects" style="margin-top: 15rem;">
         <div class="d-sm-flex justify-content-between mx-5 flex-wrap align-items-end">
@@ -264,7 +262,7 @@
                     <p>Projects we have worked on.</p>
                 </div>
             </div>
-    
+
             <div class="direction">
                 <button class="previous btn" onclick="prevSlide()">
                     <img src="assets/img/arrow-left.png" alt="">
@@ -275,7 +273,7 @@
                 </button>
             </div>
         </div>
-    
+
         <div class="projects-container mx-5 mt-5">
             <div class="card-wrapper" id="cardWrapper">
                 <div class="card">
@@ -292,36 +290,6 @@
                         </div>
                     </div>
                 </div>
-    
-                <div class="card">
-                    <!-- Card Content -->
-                    <img src="assets/img/project1.png" class="card-img-top" alt="...">
-                    <div class="card-body p-4">
-                        <p class="card-text">Delivery and Installation of Tower equipment</p>
-                        <div class="d-flex justify-content-between align-items-end brand">
-                            <p class="name">KOMINFO</p>
-                            <span class="d-flex location">
-                                <img src="assets/img/Location.png" alt="">
-                                <p class="ms-2">Maluku</p>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <!-- Card Content -->
-                    <img src="assets/img/project2.png" class="card-img-top" alt="...">
-                    <div class="card-body p-4">
-                        <p class="card-text">Installation of home power banks</p>
-                        <div class="d-sm-flex justify-content-between align-items-end brand">
-                            <p class="name">EBTKE ESDM</p>
-                            <span class="d-flex location">
-                                <img src="assets/img/Location.png" alt="">
-                                <p class="ms-2">Papua</p>
-                            </span>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="card">
                     <!-- Card Content -->
@@ -353,7 +321,37 @@
                     </div>
                 </div>
 
-                
+                <div class="card">
+                    <!-- Card Content -->
+                    <img src="assets/img/project1.png" class="card-img-top" alt="...">
+                    <div class="card-body p-4">
+                        <p class="card-text">Delivery and Installation of Tower equipment</p>
+                        <div class="d-flex justify-content-between align-items-end brand">
+                            <p class="name">KOMINFO</p>
+                            <span class="d-flex location">
+                                <img src="assets/img/Location.png" alt="">
+                                <p class="ms-2">Maluku</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <!-- Card Content -->
+                    <img src="assets/img/project2.png" class="card-img-top" alt="...">
+                    <div class="card-body p-4">
+                        <p class="card-text">Installation of home power banks</p>
+                        <div class="d-sm-flex justify-content-between align-items-end brand">
+                            <p class="name">EBTKE ESDM</p>
+                            <span class="d-flex location">
+                                <img src="assets/img/Location.png" alt="">
+                                <p class="ms-2">Papua</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="card">
                     <!-- Card Content -->
                     <img src="assets/img/project1.png" class="card-img-top" alt="...">

@@ -133,15 +133,15 @@ video {
 }
 
 .kotak {
-    border-radius: 8px;
+    border-radius: 5px;
     background: #E28D26;
     box-shadow: 0px 2.767px 2.214px 0px rgba(0, 0, 0, 0.02), 0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.03), 0px 12.522px 10.017px 0px rgba(0, 0, 0, 0.04), 0px 22.336px 17.869px 0px rgba(0, 0, 0, 0.04), 0px 41.778px 33.422px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 397px;
-    height: 327px;
+    width: 280px;
+    height: 250px;
     flex-shrink: 0;
     transition: .2s;
 }
@@ -213,7 +213,7 @@ video {
 }
 
 .service-card .image {
-    width: 559px;
+    width: 100% !important;
     height: 763px;
     flex-shrink: 0; 
     border-radius: 8px;
@@ -360,6 +360,34 @@ video {
     font-weight: 400;
 }
 
+/* service-desc new*/
+
+.service-card{
+    height: 100% !important;
+    margin: 0 !important;
+}
+
+.service-desc{
+    padding-right: 0 !important;
+}
+
+.service-desc .service-text{
+    height: 30%;
+}
+
+.service-desc .service-kotak{
+    height: 70%;
+}
+
+.service-kotak .row{
+    height: 28% !important;
+    margin-top: 5% !important;
+}
+
+.service-desc .kotak{
+    width: 45% !important;
+    height: 100% !important;
+}
 
 /* Responsive */
 
@@ -384,7 +412,6 @@ video {
 
     .kotak .isi p {
     font-size: 23px;
-
     }
 
     .service-desc .kotak p {
@@ -394,7 +421,7 @@ video {
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
-        line-height: 70px; /* 250% */
+        /* line-height: 70px; 250% */
     }
 
     .service-desc .title h5 {
@@ -403,7 +430,7 @@ video {
         font-size: 25px;
         font-style: normal;
         font-weight: 400;
-        line-height: 70px; /* 218.75% */
+        /* line-height: 70px; 218.75% */
     }
     .service-desc .subtitle p {
         color: var(--Orange, #E28D26);
@@ -413,13 +440,6 @@ video {
         font-style: italic;
         font-weight: 600;
         line-height: 40px; /* 145.833% */
-    }
-
-
-
-    .service-card {
-        margin-bottom: 2rem;
-
     }
 
     .service-card .image {
@@ -459,7 +479,6 @@ video {
         width: 400px;
         height: 176px;
     }
-    
 }
 
 
