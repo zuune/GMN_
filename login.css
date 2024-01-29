@@ -1,0 +1,151 @@
+:root {
+  --black: #181818;
+  --gray: #D8D8D8;
+  --white: #F8F8F8;
+  --orange: #E28D26;
+  --blue: #0395D9;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+.text {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.content {
+  width: 585px;
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  top: 50px;
+  right: 24px;
+  color: var(--gray);
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.btn {
+  width: 585px;
+  height: 56px;
+  text-align: center;
+}
+
+.img {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid {
+    display: block; 
+    background-image: url(assets/images/Img.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    height: 100vh;
+    align-items: center;
+  }
+
+  .logo {
+    margin-top: 100px;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .content {
+    width: 90%;
+    padding: 0 24px;
+  }
+
+  .label {
+    display: none;
+  }
+
+  .btn {
+    width: 215px;
+    margin: 0 auto;
+    height: 38px;
+  }
+
+  .eye {
+    top: 10px;
+    right: 40px;
+    width: 16px;
+    height: 16px;
+    color: var(--gray);
+  }
+
+  .img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container-fluid {
+    background-image: url(assets/images/Img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    margin-top: 50px; 
+  }
+
+  .text {
+    display: block; 
+    text-align: center;
+  }
+
+  .content {
+    width: 100%; 
+    padding: 0 24px;
+  }
+
+  .label {
+    display: block; 
+    text-align: center; 
+  }
+
+  .btn {
+    width: 460px; 
+    height: 38px;
+  }
+
+  .eye {
+    top: 10px;
+    right: 40px;
+    width: 16px;
+    height: 16px;
+    color: var(--gray);
+  }
+
+  .img {
+    display: none;
+  }
+}
