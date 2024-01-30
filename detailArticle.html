@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./detailArticle.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white py-3">
+        <div class="container-fluid">
+            <a class="logo d-flex align-items-center navbar-brand" href="">
+                <img src="../assets/images/Nav-Left.png" alt="Logo GMN" width="150px">
+            </a>
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item pe-5">
+                        <a class="nav-link fw-bolder" href="">Home</a>
+                    </li>
+                    <li class="nav-item pe-5 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="profilDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+                            <li><a class="dropdown-item" href="">Introduction</a></li>
+                            <li><a class="dropdown-item" href="">Scope</a></li>
+                            <li><a class="dropdown-item" href="">Organization</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item pe-5 dropdown">
+                        <!-- dropdown-toggle -->
+                        <a class="nav-link " href="#" id="productDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                    </li>
+                    <li class="nav-item pe-5">
+                        <a class="nav-link" href="">Services</a>
+                    </li>
+                    <li class="nav-item pe-5">
+                        <a class="nav-link" href="">Projects</a>
+                    </li>
+                    <li class="nav-item pe-5">
+                        <a class="nav-link" href="">Articles</a>
+                    </li>
+                </ul>
+                <!-- User Dropdown -->
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>ENG</strong>
+                    </a>
+                    <ul id="ddmenuLoggedIn" class="dropdown-menu manual-end" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" id="lang_eng" style="cursor: pointer;">ENG</a></li>
+                        <li><a class="dropdown-item" id="lang_ind" style="cursor: pointer;">IND</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="img-container">
+        <img src="./assets/image/Img.png" alt="" class="img-fluid">
+        <div class="overlay">
+            <p class="fw-bold fs-4">ARTICLES</p>
+            <i class=" fs-3">ALL ARTICLES</>
+        </div>
+    </div>
+
+    <div class="content">
+        <div>
+            <p style="color: #E28D26;" class="fw-bold fs-4 mt-3">LOREM IPSUM DOLOR SIT AMET</>
+            <p style="color: #0395D9;" class="fs-4">21 Desember, 2022</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar fringilla nisl ac scelerisque. Nam iaculis nulla sit amet elit tristique congue. Fusce ac lacinia purus. Fusce aliquam molestie risus quis semper. Suspendisse pharetra ultricies eros in accumsan. Fusce nibh sapien, egestas nec leo in, pretium faucibus elit. 
+
+                Pellentesque suscipit augue interdum dui sollicitudin, finibus molestie dui euismod. Integer eu luctus odio, sed iaculis nisl. Nam non dolor mauris. Quisque non porta diam. Sed dui est, efficitur venenatis neque vel, lobortis dignissim sem. Mauris eget vehicula elit. 
+                
+                Maecenas sollicitudin vestibulum mattis. Nam pharetra ornare velit vitae auctor. Nunc est est, condimentum et orci sit amet, facilisis efficitur lacus. Nulla euismod mauris velit, sed convallis elit interdum eget.</p>
+        </div>
+        <img src="./assets/image/Img (5).png" alt="" class="img-fluid shadow rounded-2">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

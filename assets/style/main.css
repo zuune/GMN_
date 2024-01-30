@@ -403,6 +403,32 @@ video {
     border-top: 3px solid black !important; /* Warna garis dan ketebalan */
 }
 
+/* products new */
+.products .next.btn {
+    color: var(--White, #f8f8f8);
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px; /* 250% */
+    width: 245px;
+    height: 83px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: var(--Orange, #E28D26);
+}
+
+.products .next.btn:hover {
+    background: var(--Orange, #b06c19);
+
+}
+
+.products .next.btn img{
+    height: 30px;
+    flex-shrink: 0;
+}
+
 /* Responsive */
 
 /* Header */
