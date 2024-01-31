@@ -460,10 +460,41 @@ video {
     transform: scale(1.01);
     cursor: pointer;
 }
-
-
-
 /* end products */
+
+/* ready */
+.cta{
+    background-image: url('../img/img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100vw;
+    position: relative;
+}
+
+.cta .button-cta:hover{
+    background-color: rgb(166, 161, 161) !important;
+}
+
+.cta .button-cta{
+    z-index: 3;
+}
+.cta h3{
+    position: relative;
+    z-index: 2;
+}
+
+.cta::after{
+    position: absolute;
+    content: "After";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.3;
+}
+/* end ready */
 
 /* Responsive */
 
