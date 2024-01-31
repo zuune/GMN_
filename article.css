@@ -9,10 +9,6 @@ body, html {
     padding: 0;
 }
 
-body {
-    padding-bottom: 2000px;
-}
-
 nav div ul.navbar-nav li a.nav-link{
     color:#151515;
 }
