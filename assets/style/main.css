@@ -9,10 +9,6 @@ body, html {
     padding: 0;
 }
 
-body {
-    padding-bottom: 2000px;
-}
-
 nav {
     z-index: 1000; 
 }
@@ -496,6 +492,46 @@ video {
 }
 /* end ready */
 
+/* articles */
+.btn-articles{
+    transform: scale(0.6) translateX(0px) !important;
+}
+/* end articles */
+
+/* want to know more */
+/* ready */
+.wta{
+    background-image: url('../img/wtm-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100vw;
+    position: relative;
+}
+
+.wta h3{
+    position: relative;
+    z-index: 2;
+}
+
+.mid{
+    width: 50%;
+    z-index: 100;
+}
+
+.wta::after{
+    position: absolute;
+    content: "After";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.3;
+}
+/* end ready */
+/* end want to know more */
+
 /* Responsive */
 
 /* Header */
@@ -674,6 +710,22 @@ video {
     .service-desc .row .kotak:last-child {
         margin-top: 0px !important;
     }
+
+    .footer h1{
+        margin-top: 24px;
+        font-size: 24px;
+    }
+    .footer ul li a{
+        font-size: 12px;
+    }
+
+    .footer .copyright{
+        font-size: 12px;
+    }
+
+    .footer img{
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 780px ) {
@@ -778,7 +830,29 @@ video {
         height: 200px;
     }
 
-    
+    .mid{
+        width: 90%;
+        z-index: 100;
+    }
+
+    .footer h1{
+        margin: auto;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .footer ul li a{
+        font-size: 12px;
+    }
+
+    .footer .copyright{
+        font-size: 12px;
+    }
+
+    .footer img{
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 600px ) {
@@ -802,5 +876,9 @@ video {
     }
     .services .service-text .subtitle p{
         font-size: 22px;
+    }
+
+    .btn-articles{
+        transform: scale(0.6) translateX(-100px) !important;
     }
 }
