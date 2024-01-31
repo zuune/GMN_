@@ -78,8 +78,8 @@ video {
 
 .data {
     position: absolute;
+    top: 5%;
     right: 50px;
-    bottom: 10%;
     width: 282px;
     height: 586px;
     z-index: 10;
@@ -555,10 +555,14 @@ video {
 
 
 @media screen and (max-width: 1281px ) {
-
+    
 }
 
 @media screen and (max-width: 920px ) {
+    .data {
+        top: -15%;
+        transform: scale(0.7);
+    }
     .value h3 {
         color: #E28D26;
         font-family: Roboto;
@@ -620,11 +624,23 @@ video {
     .products .products-image .card{
         width: 30rem !important;
     }
+    
+    .video-header .overlay .text {
+        top: 20%;
+    }
 
-
+    .video-header .overlay .text .header {
+        font-size: 24px;
+    }
+    .video-header .overlay .text p{
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 780px ) {
+    .data {
+        display: none;
+    }
     .value h3 {
         color: #E28D26;
         font-family: Roboto;
