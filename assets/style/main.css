@@ -620,6 +620,8 @@ video {
     .products .products-image .card{
         width: 30rem !important;
     }
+
+
 }
 
 @media screen and (max-width: 780px ) {
@@ -668,5 +670,39 @@ video {
 
     .products .products-image .card{
         width: 25rem !important;
+    }
+
+    
+    .projects .direction .previous.btn img{
+        height: 20px;
+    }
+
+    .projects .direction .previous.btn {
+        width: 120px;
+        height: 60px;
+    }
+
+    .projects .direction .next.btn {
+        color: var(--White, #f8f8f8);
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px; /* 250% */
+        width: 180px;
+        height: 60px;
+        flex-shrink: 0;
+        border-radius: 50px;
+        background: var(--Orange, #E28D26);
+    }
+
+    .projects .direction .next.btn img{
+        height: 20px;
+    }
+
+    .projects .card{
+        width: 500px;
+        height: 200px;
     }
 }
