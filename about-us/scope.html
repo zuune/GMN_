@@ -1,71 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://unpkg.com/feather-icons"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="./scope.css">
   <title>Document</title>
 </head>
+
 <body>
- <!-- Navbar -->
- <nav class="navbar navbar-expand-lg bg-white py-3">
-    <div class="container-fluid">
-        <a class="logo d-flex align-items-center navbar-brand" href="">
-            <img src="../assets/images/Nav-Left.png" alt="Logo GMN" width="150px">
-        </a>
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item pe-5">
-                    <a class="nav-link fw-bolder" href="">Home</a>
-                </li>
-                <li class="nav-item pe-5 dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="profilDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        About Us
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="profilDropdown">
-                        <li><a class="dropdown-item" href="">Introduction</a></li>
-                        <li><a class="dropdown-item" href="">Scope</a></li>
-                        <li><a class="dropdown-item" href="">Organization</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item pe-5 dropdown">
-                    <!-- dropdown-toggle -->
-                    <a class="nav-link " href="#" id="productDropdown" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Products
-                    </a>
-                </li>
-                <li class="nav-item pe-5">
-                    <a class="nav-link" href="">Services</a>
-                </li>
-                <li class="nav-item pe-5">
-                    <a class="nav-link" href="">Projects</a>
-                </li>
-                <li class="nav-item pe-5">
-                    <a class="nav-link" href="">Articles</a>
-                </li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white py-3">
+    <div class="container-fluid ">
+      <a class="logo d-flex align-items-center navbar-brand" href="">
+        <img src="assets/img/logo.png" alt="Logo GMN" width="150px">
+      </a>
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item pe-5">
+            <a class="nav-link fw-bolder" href="index.html">Home</a>
+          </li>
+          <li class="nav-item pe-5 dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="profilDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="profilDropdown">
+              <li><a class="dropdown-item" href="about-us/introduction.html">Introduction</a></li>
+              <li><a class="dropdown-item" href="about-us/scope.html">Scope</a></li>
+              <li><a class="dropdown-item" href="about-us/organization.htmlscope.html">Organization</a>
+              </li>
             </ul>
-            <!-- User Dropdown -->
-            <div class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <strong>ENG</strong>
-                </a>
-                <ul id="ddmenuLoggedIn" class="dropdown-menu manual-end" aria-labelledby="userDropdown">
-                    <li><a class="dropdown-item" id="lang_eng" style="cursor: pointer;">ENG</a></li>
-                    <li><a class="dropdown-item" id="lang_ind" style="cursor: pointer;">IND</a></li>
-                </ul>
-            </div>
+          </li>
+          <li class="nav-item pe-5 dropdown">
+            <!-- dropdown-toggle -->
+            <a class="nav-link " href="products.html">
+              Products
+            </a>
+          </li>
+          <li class="nav-item pe-5">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item pe-5">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item pe-5">
+            <a class="nav-link" href="article.html">Articles</a>
+          </li>
+        </ul>
+        <!-- User Dropdown -->
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <strong>ENG</strong>
+          </a>
+          <ul id="ddmenuLoggedIn" class="dropdown-menu manual-end" aria-labelledby="userDropdown">
+            <li><a class="dropdown-item" id="lang_eng" style="cursor: pointer;">ENG</a></li>
+            <li><a class="dropdown-item" id="lang_ind" style="cursor: pointer;">IND</a></li>
+          </ul>
         </div>
+      </div>
     </div>
   </nav>
 
@@ -83,30 +85,44 @@
       <div>
         <p>Generally, GMN capability covers 3 (three) main areas as the followings:</p>
         <p style="color: #E28D26;"> Engineering </p>
-        <p>• Energy supply system, electrical and mechanical design and construction, for private houses, real estates, commercial buildings, and industries.
-        • Planning for reliable, efficient, and rational energy supply systems for remote applications such as: telecommunication systems, village energy supply, home industries, agriculture processing center, drinking water supply, and public health facilities utilizing locally available energy sources like, solar, micro-hydro, wind, biomass and combination of them.
-        • Delivery and installation of technical systems utilizing renewable energy sources for communication sectors (i.e. photovoltaic, micro-hydro), such as: base transceiver station (BTS), repeater station, radio communication (e.g. sea navigation, railway crossing, radio beacon, and highway information system), cathodic protection, traffic signaling (e.g. light house, buoy, barrier flasher),
-        • Planning and supply of system for decentralized power supply systems and rural electrification, such as: stand-alone photovoltaic, micro-hydro power, biomass, wind energy converter, and hybrid power systems.</p>
+        <p>• Energy supply system, electrical and mechanical design and construction, for private houses, real estates,
+          commercial buildings, and industries.
+          • Planning for reliable, efficient, and rational energy supply systems for remote applications such as:
+          telecommunication systems, village energy supply, home industries, agriculture processing center, drinking
+          water supply, and public health facilities utilizing locally available energy sources like, solar,
+          micro-hydro, wind, biomass and combination of them.
+          • Delivery and installation of technical systems utilizing renewable energy sources for communication sectors
+          (i.e. photovoltaic, micro-hydro), such as: base transceiver station (BTS), repeater station, radio
+          communication (e.g. sea navigation, railway crossing, radio beacon, and highway information system), cathodic
+          protection, traffic signaling (e.g. light house, buoy, barrier flasher),
+          • Planning and supply of system for decentralized power supply systems and rural electrification, such as:
+          stand-alone photovoltaic, micro-hydro power, biomass, wind energy converter, and hybrid power systems.</p>
       </div>
       <img src="../assets/images/Img (3).png" alt="" class="img-fluid">
     </div>
     <div class="content container-fluid">
       <div>
         <p style="color: #E28D26;">Energy Management and Conservation</p>
-        <p>• Walk through energy audits, as well as detailed energy investigation by measurements and/or testing, i.e. to identify the energy saving potentials and measures.
-        • Feasibility studies for implementation of energy saving measures by the introduction of energy management system and/or energy efficient technologies.
-        • Maintenance services for energy equipment such as: remote area power supply system (RAPS), air conditioning system (including e.g.: chiller, cooling tower, air handling unit - AHU, and fan coil unit - FCU), and heating system (boiler and heat exchanger).
-        • Development of computer-based energy monitoring and accounting systems. </p>
+        <p>• Walk through energy audits, as well as detailed energy investigation by measurements and/or testing, i.e.
+          to identify the energy saving potentials and measures.
+          • Feasibility studies for implementation of energy saving measures by the introduction of energy management
+          system and/or energy efficient technologies.
+          • Maintenance services for energy equipment such as: remote area power supply system (RAPS), air conditioning
+          system (including e.g.: chiller, cooling tower, air handling unit - AHU, and fan coil unit - FCU), and heating
+          system (boiler and heat exchanger).
+          • Development of computer-based energy monitoring and accounting systems. </p>
       </div>
       <img src="../assets/images/Img (4).png" alt="img-fluid">
     </div>
     <div class="content container-fluid">
       <div>
         <p style="color: #E28D26;">Engineering, Procurement, Construction, and System Integration</p>
-        <p>•EPC and Integration services, including systems of photovoltaic, solar thermal collector, wind, micro-hydro, and biomass.
-        • Procurement and installation of conversion and energy conservation system, i.e. cogeneration power plant (combined heat and power - CHP), and waste heat recovery utilization.
-        • Implementation and/or supervision of energy conservation program.
-        • Procurement and installation of instrumentation system for energy conversion and conservation. </p>
+        <p>•EPC and Integration services, including systems of photovoltaic, solar thermal collector, wind, micro-hydro,
+          and biomass.
+          • Procurement and installation of conversion and energy conservation system, i.e. cogeneration power plant
+          (combined heat and power - CHP), and waste heat recovery utilization.
+          • Implementation and/or supervision of energy conservation program.
+          • Procurement and installation of instrumentation system for energy conversion and conservation. </p>
       </div>
       <img src="../assets/images/Img (5).png" alt="" class="img-fluid">
     </div>
@@ -116,4 +132,5 @@
     feather.replace();
   </script>
 </body>
+
 </html>
