@@ -429,6 +429,38 @@ video {
     flex-shrink: 0;
 }
 
+/* start products */
+
+.products .previous.btn img{
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.products .previous.btn {
+    width: 176px;
+    height: 83px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border: 2px solid var(--Orange, #E28D26);
+}
+
+.products .previous.btn:hover {
+    background-color: #ffce91;
+}
+
+.products .previous.btn.flip img{
+    transform: scaleX(-1);
+}
+
+.products .products-image .card:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+
+
+/* end products */
+
 /* Responsive */
 
 /* Header */
@@ -584,6 +616,10 @@ video {
     .service-desc .kotak {
         width: 100%;
     }
+
+    .products .products-image .card{
+        width: 30rem !important;
+    }
 }
 
 @media screen and (max-width: 780px ) {
@@ -628,5 +664,9 @@ video {
 
     .service-card .image {
         height: 300px;
+    }
+
+    .products .products-image .card{
+        width: 25rem !important;
     }
 }
