@@ -75,6 +75,10 @@ video {
     left: 50px;
     color: white; /* Adjust the text color as needed */
 }
+/* data mobile */
+.data-mobile{
+    display: none;
+}
 
 .data {
     position: absolute;
@@ -640,6 +644,16 @@ video {
 @media screen and (max-width: 780px ) {
     .data {
         display: none;
+    }
+
+    /* data mobile */
+    .data-mobile{
+        display: inherit;
+    }
+
+    .data-mobile .card-mobile:hover{
+        box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.3) !important;
+        cursor: pointer;
     }
     .value h3 {
         color: #E28D26;
