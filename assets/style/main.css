@@ -639,6 +639,10 @@ video {
     .video-header .overlay .text p{
         font-size: 18px;
     }
+
+    .service-desc .row .kotak:last-child {
+        margin-top: 0px !important;
+    }
 }
 
 @media screen and (max-width: 780px ) {
@@ -665,10 +669,10 @@ video {
     .value h3 {
         color: #E28D26;
         font-family: Roboto;
-        font-size: 24px;
+        font-size: 25px;
         font-style: italic;
         font-weight: 600;
-        line-height: 40px; /* 145.833% */
+        line-height: 35px; /* 145.833% */
     }
     .value p {
         color:  #B8B8B8;
@@ -698,7 +702,7 @@ video {
     }
 
     .service-desc .row .kotak:last-child {
-        margin-top: 1.5rem;
+        margin-top: 0px !important;
     }
 
     .service-card .image {
@@ -741,5 +745,31 @@ video {
     .projects .card{
         width: 500px;
         height: 200px;
+    }
+
+    
+}
+
+@media screen and (max-width: 600px ) {
+    .service-desc .service-kotak{
+        height: 100%;
+    }
+    
+    .service-kotak .row{
+        height: 30% !important;
+        margin-top: 10px !important;
+    }
+    
+    .service-desc .kotak{
+        width: 100% !important;
+        height: 40% !important;
+    }
+
+    .services .service-text .title h5{
+        margin-top: 5rem;
+        font-size: 30px;
+    }
+    .services .service-text .subtitle p{
+        font-size: 22px;
     }
 }
