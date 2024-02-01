@@ -964,4 +964,21 @@ video {
         width: 64px;
         height: 72px;
     }
+
+    /* project */
+    .direction button:first-child{
+        width: 100px !important;
+    }
+    .direction button:last-child{
+        width: 150px !important;
+    }
+
+    .projects{
+        transform: translateY(30px);
+    }
+
+    /* product */
+    .products-arrow button{
+        width: 120px !important;
+    }
 }
