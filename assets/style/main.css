@@ -764,6 +764,9 @@ video {
 }
 
 @media screen and (max-width: 780px ) {
+    body{
+        overflow-x: hidden;
+    }
     .data {
         display: none;
     }
@@ -875,18 +878,26 @@ video {
         text-align: center;
         margin-top: 40px;
         margin-bottom: 20px;
-        font-size: 20px;
+        font-size: 18px;
     }
     .footer ul li a{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .footer .copyright{
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    .footer{
+        text-align: center;
+    }
+
+    .footer ul li{
+        padding: 10px !important;
     }
 
     .footer img{
-        width: 100% !important;
+        width: 60% !important;
     }
 
     .card-client{
