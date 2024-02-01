@@ -783,6 +783,11 @@ video {
         box-sizing: border-box;
         margin: 0;
     }
+
+    /* products */
+    .md-ilang {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 780px ) {
