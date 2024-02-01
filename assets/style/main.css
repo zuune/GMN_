@@ -905,14 +905,14 @@ video {
         text-align: center;
         margin-top: 40px;
         margin-bottom: 20px;
-        font-size: 18px;
+        font-size: 20px;
     }
     .footer ul li a{
         font-size: 10px;
     }
 
     .footer .copyright{
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .footer{
@@ -920,7 +920,7 @@ video {
     }
 
     .footer ul li{
-        padding: 10px !important;
+        padding: 8px !important;
     }
 
     .footer img{
