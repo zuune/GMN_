@@ -772,6 +772,17 @@ video {
         width: 160px;
         height: 180px;
     }
+
+    .cta{
+        width: auto ;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .wta{
+        width: auto ;
+        box-sizing: border-box;
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 780px ) {
