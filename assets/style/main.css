@@ -532,6 +532,36 @@ video {
 /* end ready */
 /* end want to know more */
 
+/* clients */
+.container-client{
+    padding: 10px 0;
+    display: flex;
+    overflow-x: auto;
+}
+
+.container-client::-webkit-scrollbar{
+    width: 0;
+}
+
+.container-client::-webkit-scrollbar-thumb{
+    display: none;
+    background-color: #E28D26;
+    border-radius: 10px;
+}
+
+.card-client{
+    border-radius: 10px;
+    width: 256px;
+    height: 288px;
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.2);
+    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* end clients */
+
 /* Responsive */
 
 /* Header */
@@ -726,6 +756,11 @@ video {
     .footer img{
         width: 100% !important;
     }
+
+    .card-client{
+        width: 160px;
+        height: 180px;
+    }
 }
 
 @media screen and (max-width: 780px ) {
@@ -853,6 +888,11 @@ video {
     .footer img{
         width: 100% !important;
     }
+
+    .card-client{
+        width: 96px;
+        height: 108px;
+    }
 }
 
 @media screen and (max-width: 600px ) {
@@ -880,5 +920,10 @@ video {
 
     .btn-articles{
         transform: scale(0.6) translateX(-100px) !important;
+    }
+
+    .card-client{
+        width: 64px;
+        height: 72px;
     }
 }
