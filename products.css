@@ -95,6 +95,31 @@ nav div ul.navbar-nav li a.nav-link{
     margin-top: 1rem;
 }
 
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    cursor: pointer;
+}
+
+.page img {
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    top: -.35rem;
+}
+
+.page p{
+    color: #B8B8B8;
+}
+
+.page .active-page {
+    color: #151515;
+}
+
 @media screen and (max-width: 768px) {
     .input {
         margin-top: 1vh;

@@ -44,6 +44,7 @@ nav div ul.navbar-nav li a.nav-link{
 .content p {
   white-space: pre-line;
   height: auto;
+  text-align: justify;
 }
 
 @media screen and (max-width: 768px) {

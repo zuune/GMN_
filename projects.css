@@ -7,6 +7,7 @@
 body, html {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 
@@ -38,44 +39,127 @@ nav div ul.navbar-nav li a.nav-link{
     padding: 0 3.7vw;
 }
 
-.searching {
+.content-container{
+    margin-top: 15vh;
+}
+
+.map-indonesia {
     position: relative;
 }
 
-.searching .search {
+.caption-lokasi {
     position: absolute;
-    top: 2.55rem;
-    left: 1.5vh;
-    width: 1rem;
-    height: 1rem;
+    display: inline-block;
+    column-gap: .5w;
+    font-style: normal;
+    transition: transform 0.5s ease;
 }
 
-.input {
-    margin-top: 3.5vh;
-    border-color: transparent;
-    padding: .25rem .5rem;
-    padding-left: 5vh;
+.caption-lokasi:nth-child(1) {
+    right: 33vw;
+    top: 60vh;
+}
+.caption-lokasi:nth-child(2) {
+    right: 50vw;
+    top: 20vh;
+}
+.caption-lokasi:nth-child(3) {
+    right: 54vw;
+    top: 52.5vh;
+}
+.caption-lokasi:nth-child(4) {
+    left: 12vw;
+    top: 25vh;
+}
+.caption-lokasi:nth-child(5) {
+    left: 23vw;
+    top: 47vh;
+}
+.caption-lokasi:nth-child(6) {
+    left: 5vw;
+    top: 2vh;
+}
+.caption-lokasi:nth-child(7) {
+    right: 41vw;
+    top: 30vh;
+}
+.caption-lokasi:nth-child(8) {
+    right: 2vw;
+    top: 40vh;
+    flex-direction: row-reverse;
+}
+
+.caption-lokasi p {
+    padding: 0.5rem;
+    display: none;
+    background-color: #FCFCFC;
+    color: #151515;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    white-space: pre-line;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 18vw;
+    z-index: 10;
+    transition: opacity 0.5s ease;
+}
+
+.caption-lokasi::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    border-radius: 8px;
+    width: 100%; 
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.caption-lokasi:hover::before {
+    display: block;
+}
+
+.caption-lokasi img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption-lokasi:hover p {
+    display: block;
+}
+
+.content-wrapper {
+    padding: 0 3.7vw;
     width: 100%;
+    margin-top: 18vh;
+    text-align: center;
+}
+
+.carousel-content {
+    width: 38.33vw;
+    background-color: yellow;
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.carousel-content > * {
+    flex-shrink: 0;
 }
 
 .content {
-    margin-top: 15vh;
-    display: flex;
-    column-gap: 3vh;
+    cursor: pointer;
+    font-style: normal;
 }
 
-.content .img {
-    width: 43.64vw;
-    height: 58.42vh;
-}
-
-.content .text-content {
-    width: 43.64vw;
-}
-
-.content .text-content p:last-child {
-    white-space: pre-line;
-    text-align: justify;
+.content-image {
+    width: 38.33vw;
+    height: 44vh;
 }
 
 .slider {
@@ -87,13 +171,22 @@ nav div ul.navbar-nav li a.nav-link{
     width: 80vw;
     height: 1vh;
     background-color: #0395D9;
+    font-size: 1.5rem;
 }
 
-.line img {
+.circle-icon {
     width: 1.875rem;
     height: 1.875rem;
     position: relative;
     top: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    fill: #E28D26;
 }
 
 .second-overlay {
@@ -105,45 +198,73 @@ nav div ul.navbar-nav li a.nav-link{
     font-size: 1.25rem;
 }
 
+.arrow {
+    cursor: pointer;
+}
+
+.arrow:hover {
+    transform: scale(1.05);
+}
+
 @media screen and (max-width: 767px) {
-    .input {
-        margin-top: 1vh;
+
+    .caption-lokasi:nth-child(1) {
+        right: 31vw;
+        top: 10.8vh;
+    }
+    .caption-lokasi:nth-child(2) {
+        right: 50vw;
+        top: 2vh;
+    }
+    .caption-lokasi:nth-child(3) {
+        right: 54vw;
+        top: 9vh;
+    }
+    .caption-lokasi:nth-child(4) {
+        left: 10vw;
+        top: 3.5vh;
+    }
+    .caption-lokasi:nth-child(5) {
+        left: 23vw;
+        top: 8vh;
+    }
+    .caption-lokasi:nth-child(6) {
+        left: 4vw;
+        top: -1vh;
+    }
+    .caption-lokasi:nth-child(7) {
+        right: 39vw;
+        top: 4vh;
+    }
+    .caption-lokasi:nth-child(8) {
+        right: 1vw;
+        top: 6vh;
+        flex-direction: row-reverse;
     }
 
-    .searching .search {
-        position: absolute;
-        top: 1.35rem;
-        left: 1.5vh;
+    .caption-lokasi p {
+        font-size: .45rem;
     }
 
     .content {
-        display: flex;
-        margin-top: 5vh;
-        flex-direction: column;
-        font-size: 1rem;
-        align-items: center;
+        width: 70vw;
+        height: 37vh;
+        font-size: .875rem;
+        margin-top: -10vh;
     }
 
-    .content .img {
-        width: 90vw;
-        height: 58.42vh;
-    }
-    
-    .content .text-content {
-        position: relative;
-        width: 90vw;
-        top: -25vh;
-    }
-
-    .slider {
-        margin-top: -20vh;
+    .content-image {
+        width: 100%;
+        height: 28vh;
     }
 
     .line {
         height: .5vh;
+        font-size: .6rem;
+        margin-top: -25vh;
     }
 
-    .line img {
+    .circle-icon {
         width: .8rem;
         height: .8rem;
         position: relative;
@@ -155,7 +276,7 @@ nav div ul.navbar-nav li a.nav-link{
     }
 
     .second-overlay {
-        margin-top: 5vh;
+        margin-top: -5vh;
     }
 
     .download-icon {
@@ -170,17 +291,57 @@ nav div ul.navbar-nav li a.nav-link{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .input {
-      margin-top: 2vh;
+
+    .caption-lokasi:nth-child(1) {
+        right: 32vw;
+        top: 21vh;
+    }
+    .caption-lokasi:nth-child(2) {
+        right: 50vw;
+        top: 7vh;
+    }
+    .caption-lokasi:nth-child(3) {
+        right: 54vw;
+        top: 18.6vh;
+    }
+    .caption-lokasi:nth-child(4) {
+        left: 12vw;
+        top: 6vh;
+    }
+    .caption-lokasi:nth-child(5) {
+        left: 23vw;
+        top: 16vh;
+    }
+    .caption-lokasi:nth-child(6) {
+        left: 6vw;
+        top: 0vh;
+    }
+    .caption-lokasi:nth-child(7) {
+        right: 41vw;
+        top: 10vh;
+    }
+    .caption-lokasi:nth-child(8) {
+        right: 1vw;
+        top: 15vh;
+        flex-direction: row-reverse;
     }
 
     .content {
         margin-top: 5vh;
     }
 
+    .content-image {
+        width: 70vw;
+        height: 37vh;
+    }
+
     .slider {
         margin-top: 5vh;
         padding: 0 3.7vw;
+    }
+
+    .line {
+        font-size: 1rem;
     }
 
     .arrow {
@@ -190,5 +351,4 @@ nav div ul.navbar-nav li a.nav-link{
     .second-overlay {
         margin-top: 5vh;
     }
-
 }

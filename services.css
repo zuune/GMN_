@@ -43,16 +43,32 @@ nav div ul.navbar-nav li a.nav-link{
 }
 
 .card {
-  width: 40.5vw;
-  height: 57.31vh;
+  width: 22.8vw;
+  height: 32.22vh;
   cursor: pointer;
   background-color: #F8F8F8;
 }
 
-@media screen and (max-width: 768px) {
+.card img {
+  width: 6.04vw;
+  height: 10.74vh;
+}
+
+.card p {
+  font-style: normal;
+  color: #0395D9;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
   .card {
-    width: 90vw;
-    height: 40vh;
+    width: 65vw;
+    height: 35vh;
+  }
+
+  .card img {
+    width: 40vw;
+    height: 20vh;
   }
 }
 
@@ -60,5 +76,9 @@ nav div ul.navbar-nav li a.nav-link{
   .card {
     width: 36vw;
     height: 30vh;
+  }
+  .card img {
+    width: 20vw;
+    height: 15vh;
   }
 }

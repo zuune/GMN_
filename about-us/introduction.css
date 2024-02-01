@@ -34,27 +34,36 @@ nav div ul.navbar-nav li a.nav-link{
 .content-container {
   margin-top: 11.24vh;
   padding: 0 3.7vh;
-  display: flex;
-  flex-direction: column;
-  row-gap: 17.7vh;
 }
 
 .content {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+}
+
+.content img {
+  margin-left: 10vw;
 }
 
 .content p {
   width: 58.54vw;
-  height: 17vh;
-  font-size: 24px;
+  height: auto;
+  text-align: justify;
+  font-style: normal;
 }
 
 .text-content {
   white-space: pre-line; 
+  text-align: justify;
+  font-style: normal;
 }
 
-@media screen and (max-width: 768px) {
+.material-text {
+  position: relative;
+  top: -8vh;
+}
+
+@media screen and (max-width: 767px) {
   .img-container {
     width: 100%;
   }
@@ -63,27 +72,30 @@ nav div ul.navbar-nav li a.nav-link{
     margin-top: 5vh;
     display: flex;
     flex-direction: column;
-    row-gap: 8vh;
-  }
-
-  .content:nth-child(odd) {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    row-gap: 2vh;
-  }
-
-  .content:nth-child(even) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 2vh;
+    font-size: 1rem;
   }
 
   .content p {
-    font-size: 16px;
-    width: 100%;
-    height: auto;
+    width: 90%;
+  }
+
+  .content img {
+    margin-left: 0;
+    margin-right: 2vw;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+    row-gap: 5vh;
+  }
+  
+  .material-text {
+    top: -4vh;
+  }
+
+  .text-content:last-child {
+    position: relative;
+    top: -6vh;
   }
 }
 
@@ -99,23 +111,16 @@ nav div ul.navbar-nav li a.nav-link{
     row-gap: 8vh;
   }
 
-  .content:nth-child(odd) {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    row-gap: 2vh;
+  .content img {
+    margin-left: 0;
   }
 
-  .content:nth-child(even) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 2vh;
+  .material-text {
+    top: -4vh;
   }
 
-  .content p {
-    font-size: 24px;
-    width: 100%;
-    height: auto;
+  .text-content:last-child {
+    position: relative;
+    top: -18vh;  
   }
 }

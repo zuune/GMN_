@@ -42,7 +42,7 @@ nav div ul.navbar-nav li a.nav-link{
     justify-content: center;
     align-items: center;
     position: relative;
-    column-gap: 20vh;
+    column-gap: 10vh;
 }
 
 .content-wrapper {
@@ -52,6 +52,11 @@ nav div ul.navbar-nav li a.nav-link{
     padding: 0 3.7vw;
     column-gap: 4vh;
     text-align: justify;
+}
+
+.content-wrapper p {
+    font-size: 1.5rem;
+    white-space: pre-line;
 }
 
 @media screen and (max-width: 767px) {
@@ -78,6 +83,10 @@ nav div ul.navbar-nav li a.nav-link{
         margin-left: 5%;
         font-size: 1rem;
         row-gap: 2vh;
+    }
+
+    .content-wrapper p {
+        font-size: 1rem;
     }
 }
 
