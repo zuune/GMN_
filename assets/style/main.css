@@ -981,4 +981,11 @@ video {
     .products-arrow button{
         width: 100px !important;
     }
+
+    .projects .title h4{
+        font-size: 22px;
+    }
+    .projects .subtitle p{
+        font-size: 24px;
+    }
 }
