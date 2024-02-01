@@ -29,6 +29,7 @@ nav div ul.navbar-nav li a.nav-link{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1.875rem;
 }
 
 .our-customer {
@@ -54,12 +55,22 @@ nav div ul.navbar-nav li a.nav-link{
     text-align: justify;
 }
 
+.content-wrapper img{
+    width: 34vw;
+    height: 70vh;
+}
+
 .content-wrapper p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-style: normal;
     white-space: pre-line;
 }
 
 @media screen and (max-width: 767px) {
+    .overlay {
+        font-size: 1rem;
+    }
+
     .input {
         margin-top: 1vh;
     }
@@ -83,6 +94,11 @@ nav div ul.navbar-nav li a.nav-link{
         margin-left: 5%;
         font-size: 1rem;
         row-gap: 2vh;
+    }
+
+    .content-wrapper img{
+        width: 70vw;
+        height: 35vh;
     }
 
     .content-wrapper p {
@@ -114,5 +130,10 @@ nav div ul.navbar-nav li a.nav-link{
         margin-left: 5%;
         font-size: 1.5rem;
         row-gap: 2vh;
+    }
+
+    .content-wrapper img{
+        width: 50vw;
+        height: 35vh;
     }
 }

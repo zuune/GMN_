@@ -36,6 +36,14 @@ nav div ul.navbar-nav li a.nav-link{
     margin-top: 11.94vh;
     display: flex;
     column-gap: 1vw;
+    font-size: 1.5rem;
+    font-style: normal;
+    text-align: justify;
+}
+
+.content img {
+    max-height: 70vh;
+    width: 29.42vw;
 }
 
 .content div p:last-child {
