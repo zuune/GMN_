@@ -57,7 +57,7 @@ nav div ul.navbar-nav li a.nav-link{
 
 .caption-lokasi:nth-child(1) {
     right: 33vw;
-    top: 60vh;
+    top: 58vh;
 }
 .caption-lokasi:nth-child(2) {
     right: 50vw;
@@ -65,7 +65,7 @@ nav div ul.navbar-nav li a.nav-link{
 }
 .caption-lokasi:nth-child(3) {
     right: 54vw;
-    top: 52.5vh;
+    top: 50vh;
 }
 .caption-lokasi:nth-child(4) {
     left: 12vw;
@@ -155,6 +155,7 @@ nav div ul.navbar-nav li a.nav-link{
 .content {
     cursor: pointer;
     font-style: normal;
+    font-size: 1.375rem;
 }
 
 .content-image {
@@ -246,11 +247,14 @@ nav div ul.navbar-nav li a.nav-link{
         font-size: .45rem;
     }
 
-    .content {
-        width: 70vw;
+    .carousel-content {
+        width: 80vw;
         height: 37vh;
-        font-size: .875rem;
         margin-top: -10vh;
+    }
+
+    .content {
+        font-size: .875rem;
     }
 
     .content-image {
@@ -326,13 +330,18 @@ nav div ul.navbar-nav li a.nav-link{
         flex-direction: row-reverse;
     }
 
+    .carousel-content {
+        width: 76vw;
+        margin-top: -10vh;
+        overflow-y: hidden;
+    }
+
     .content {
-        margin-top: 5vh;
+        font-size: 1rem;
     }
 
     .content-image {
-        width: 70vw;
-        height: 37vh;
+        width: 100%;
     }
 
     .slider {

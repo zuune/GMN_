@@ -47,7 +47,7 @@ nav div ul.navbar-nav li a.nav-link{
 
 .profile-img {
   width: 29.32vw;
-  height: 65vh;
+  height: 70vh;
 }
 
 .content p {
@@ -90,7 +90,7 @@ nav div ul.navbar-nav li a.nav-link{
 
   .profile-img {
     width: 90%;
-    height: 40vh;
+    height: 45vh;
   }
 
   .content p {
@@ -111,11 +111,12 @@ nav div ul.navbar-nav li a.nav-link{
     flex-direction: column;
     align-items: center;
     row-gap: 2vh;
+    font-size: 1.5rem;
   }
 
   .profile-img {
     width: 90%;
-    height: 60vh;
+    height: 70vh;
   }
 
   .content p {

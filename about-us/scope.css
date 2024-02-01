@@ -41,6 +41,10 @@ nav div ul.navbar-nav li a.nav-link{
   justify-content: space-between;
 }
 
+.content img {
+  width: 40vw;
+}
+
 .content p {
   white-space: pre-line;
   height: auto;

@@ -47,10 +47,30 @@ arrowRight.addEventListener('click', () => {
 const content = document.querySelector('.carousel-content');
 const arrowButton = document.querySelectorAll('.carousel-arrow');
 
+let startX;
+
+content.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+});
+
+content.addEventListener('touchmove', (e) => {
+    if (!startX) return;
+
+    const currentX = e.touches[0].clientX;
+    const deltaX = currentX - startX;
+
+    if (Math.abs(deltaX) > 50) {
+        const direction = deltaX > 0 ? -1 : 1;
+        const scrollAmount = content.clientWidth * direction;
+        content.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        startX = null;
+    }
+});
+
 arrowButton.forEach(button => {
     button.addEventListener("click", () => {
-        const direction = button.id === "prev-slide" ?  -1 : 1;
+        const direction = button.id === "prev-slide" ? -1 : 1;
         const scrollAmount = content.clientWidth * direction;
-        content.scrollBy({left: scrollAmount, behavior: 'smooth'});
+        content.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     });
 });
