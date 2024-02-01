@@ -505,7 +505,7 @@ video {
 
 /* articles */
 .btn-articles{
-    transform: scale(0.6) translateX(0px) !important;
+    transform: scale(0.6);
 }
 /* end articles */
 
@@ -931,6 +931,10 @@ video {
         width: 96px;
         height: 108px;
     }
+
+    .btn-articles{
+        transform: scale(0.6) translateX(0px) !important;
+    }
 }
 
 @media screen and (max-width: 600px ) {
@@ -954,10 +958,6 @@ video {
     }
     .services .service-text .subtitle p{
         font-size: 22px;
-    }
-
-    .btn-articles{
-        transform: scale(0.6) translateX(-100px) !important;
     }
 
     .card-client{
