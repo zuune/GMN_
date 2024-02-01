@@ -430,6 +430,17 @@ video {
 }
 
 /* start products */
+/* start products carousel */
+.products-image.row.d-flex.carousel-item.hide{
+    /* display: none !important; */
+    transform: scale(0.001);
+    z-index: -1;
+}
+
+.products-image.row.d-flex.carousel-item.show{
+    display: flex !important;
+}
+/* product carousel */
 
 .products .previous.btn img{
     height: 30px;
@@ -764,9 +775,9 @@ video {
 }
 
 @media screen and (max-width: 780px ) {
-    body{
+    /* body{
         overflow-x: hidden;
-    }
+    } */
     .data {
         display: none;
     }

@@ -451,7 +451,8 @@
 
 
     <!-- products -->
-    <div class="container-fluid products" style="margin-top: 10rem;">
+    <div class="container-fluid products  carousel slide" id="carouselExampleControls1" data-bs-ride="carousel"
+        style="margin-top: 10rem;">
         <div class="products-title text-center">
             <h5 style="color: #0395D9;">Our Products</h5>
         </div>
@@ -465,31 +466,55 @@
                 <img class="ms-3" src="assets/img/arrow-right.png" alt="">
             </button>
         </div>
-        <div class="products-image row mx-2">
-            <div class="col-lg-4">
-                <div class="card mx-auto mt-5"
-                    style="width: 18rem;padding: 10px;box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.2);">
-                    <img src="assets/img/products-1.png" class="card-img-top" alt="...">
+        <div class="carousel-inner">
+            <div id="carou1" class="products-image row d-flex carousel-item active show">
+                <div class="col-lg-4">
+                    <div class="card mx-auto mt-5"
+                        style="width: 18rem;padding: 10px;box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.2);">
+                        <img src="assets/img/products-1.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mx-auto mt-5"
+                        style="width: 18rem;padding: 10px;box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.2);">
+                        <img src="assets/img/products-2.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mx-auto mt-5"
+                        style="width: 18rem;padding: 10px;box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.2);">
+                        <img src="assets/img/products-3.png" class="card-img-top" alt="...">
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="card mx-auto mt-5"
-                    style="width: 18rem;padding: 10px;box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.2);">
-                    <img src="assets/img/products-2.png" class="card-img-top" alt="...">
+            <div id="carou2" class="products-image row d-flex carousel-item hide">
+                <div class="col-lg-4">
+                    <div class="card mx-auto mt-5"
+                        style="width: 18rem;padding: 10px;box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.2);">
+                        <img src="assets/img/products-2.png" class="card-img-top" alt="...">
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card mx-auto mt-5"
-                    style="width: 18rem;padding: 10px;box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.2);">
-                    <img src="assets/img/products-3.png" class="card-img-top" alt="...">
+                <div class="col-lg-4">
+                    <div class="card mx-auto mt-5"
+                        style="width: 18rem;padding: 10px;box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.2);">
+                        <img src="assets/img/products-3.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mx-auto mt-5"
+                        style="width: 18rem;padding: 10px;box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.2);">
+                        <img src="assets/img/products-1.png" class="card-img-top" alt="...">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="products-arrow mt-5 text-center mx-5">
-            <button style="transform: scale(0.8);" class="previous btn" onclick="prevSlide()">
+            <button style="transform: scale(0.8);" class="previous btn" data-bs-target="#carouselExampleControls1"
+                data-bs-slide="next" type="button" onclick="aktifElement()">
                 <img src="assets/img/arrow-left.png" alt="">
             </button>
-            <button style="transform: scale(0.8);" class="previous flip btn" onclick="nextSlide()">
+            <button style="transform: scale(0.8);" class="previous flip btn" data-bs-target="#carouselExampleControls1"
+                data-bs-slide="prev" type="button" onclick="aktifElement()">
                 <img src="assets/img/arrow-left.png" alt="">
             </button>
         </div>

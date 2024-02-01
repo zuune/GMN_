@@ -17,3 +17,12 @@ function updateCardPosition() {
     const newPosition = -currentIndex * cardWidth;
     cardWrapper.style.transform = `translateX(${newPosition}px)`;
 }
+
+function aktifElement() {
+    var element = document.getElementById("carou1");
+    var element2 = document.getElementById("carou2");
+    element.classList.toggle("show");
+    element2.classList.toggle("show");
+    element.classList.toggle("hide");
+    element2.classList.toggle("hide");
+}
