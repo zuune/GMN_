@@ -1,0 +1,484 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+nav div ul.navbar-nav li a.nav-link{
+    color:#151515;
+}
+
+.img-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #FCFCFC;
+    background: rgba(0, 0, 0, 0.3); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0 3.7vw;
+}
+
+.content-container{
+    margin-top: 15vh;
+}
+
+.map-indonesia {
+    position: relative;
+}
+
+.caption-lokasi {
+    position: absolute;
+    display: inline-block;
+    column-gap: .5w;
+    font-style: normal;
+    transition: transform 0.5s ease;
+}
+
+.caption-lokasi:nth-child(1) {
+    right: 33vw;
+    top: 58vh;
+}
+.caption-lokasi:nth-child(2) {
+    right: 50vw;
+    top: 20vh;
+}
+.caption-lokasi:nth-child(3) {
+    right: 54vw;
+    top: 50vh;
+}
+.caption-lokasi:nth-child(4) {
+    left: 12vw;
+    top: 25vh;
+}
+.caption-lokasi:nth-child(5) {
+    left: 23vw;
+    top: 47vh;
+}
+.caption-lokasi:nth-child(6) {
+    left: 5vw;
+    top: 2vh;
+}
+.caption-lokasi:nth-child(7) {
+    right: 41vw;
+    top: 30vh;
+}
+.caption-lokasi:nth-child(8) {
+    right: 2vw;
+    top: 40vh;
+    flex-direction: row-reverse;
+}
+
+.caption-lokasi p {
+    padding: 0.5rem;
+    display: none;
+    background-color: #FCFCFC;
+    color: #151515;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    white-space: pre-line;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 18vw;
+    z-index: 10;
+    transition: opacity 0.5s ease;
+}
+
+.caption-lokasi::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    border-radius: 8px;
+    width: 100%; 
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.caption-lokasi:hover::before {
+    display: block;
+}
+
+.caption-lokasi img {
+    max-width: 100%;    
+    height: auto;
+}
+
+.caption-lokasi:hover p {
+    display: block;
+}
+
+.content-wrapper {
+    padding: 0 3.7vw;
+    width: 100%;
+    margin-top: 18vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    column-gap: 5vw;
+}
+
+.carousel-content {
+    width: 38.33vw;
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.carousel-content > * {
+    flex-shrink: 0;
+}
+
+.content {
+    cursor: pointer;
+    font-style: normal;
+    font-size: 1.375rem;
+}
+
+.content-image {
+    width: 38.33vw;
+    height: 44vh;
+}
+
+.slider {
+    margin-top: 22vh;
+    padding: 0 3.7vw;
+}
+
+.line {
+    width: 80vw;
+    height: 1vh;
+    background-color: #0395D9;
+    font-size: 1.5rem;
+}
+
+.circle-icon {
+    width: 1.875rem;
+    height: 1.875rem;
+    position: relative;
+    top: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    fill: #E28D26;
+}
+
+.second-overlay {
+    margin-top: 25vh;
+}
+
+.download-text {
+    width: 23vw;
+    font-size: 1.25rem;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+.arrow:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1300px) {
+    .caption-lokasi:nth-child(1) {
+        right: 33vw;
+        top: 40vh;
+    }
+    .caption-lokasi:nth-child(2) {
+        right: 50vw;
+        top: 14vh;
+    }
+    .caption-lokasi:nth-child(3) {
+        right: 54vw;
+        top: 35vh;
+    }
+    .caption-lokasi:nth-child(4) {
+        left: 12vw;
+        top: 21vh;
+    }
+    .caption-lokasi:nth-child(5) {
+        left: 23vw;
+        top: 33vh;
+    }
+    .caption-lokasi:nth-child(6) {
+        left: 5vw;
+        top: 2vh;
+    }
+    .caption-lokasi:nth-child(7) {
+        right: 39vw;
+        top: 21vh;
+    }
+    .caption-lokasi:nth-child(8) {
+        right: 2vw;
+        top: 26vh;
+        flex-direction: row-reverse;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .caption-lokasi:nth-child(1) {
+        right: 31vw;
+        top: 10.8vh;
+    }
+    .caption-lokasi:nth-child(2) {
+        right: 50vw;
+        top: 2vh;
+    }
+    .caption-lokasi:nth-child(3) {
+        right: 54vw;
+        top: 9vh;
+    }
+    .caption-lokasi:nth-child(4) {
+        left: 10vw;
+        top: 3.5vh;
+    }
+    .caption-lokasi:nth-child(5) {
+        left: 23vw;
+        top: 8vh;
+    }
+    .caption-lokasi:nth-child(6) {
+        left: 4vw;
+        top: -1vh;
+    }
+    .caption-lokasi:nth-child(7) {
+        right: 39vw;
+        top: 4vh;
+    }
+    .caption-lokasi:nth-child(8) {
+        right: 1vw;
+        top: 6vh;
+        flex-direction: row-reverse;
+    }
+
+    .caption-lokasi p {
+        font-size: .45rem;
+    }
+
+    .content-wrapper {
+        display: block;
+        margin-left: 6vw;
+        position: relative;
+    }
+
+    .content-wrapper .carousel-arrow:first-child {
+        position: absolute;
+        top: 43vh;
+        left: 27vw;
+    }
+
+    .content-wrapper .carousel-arrow:last-child {
+        position: absolute;
+        top: 43vh;
+        right: 40vw;
+    }
+
+    .content-wrapper .carousel-arrow{
+        width: 3rem;
+        height: 2.3rem;
+    }
+
+    .carousel-content {
+        width: 80vw;
+        height: 40vh;
+        margin-top: -10vh;
+    }
+
+    .content {
+        font-size: .875rem;
+    }
+
+    .content-image {
+        width: 80vw;
+        height: 28vh;
+    }
+
+    .line {
+        height: .5vh;
+        font-size: .6rem;
+        margin-top: -25vh;
+    }
+
+    .circle-icon {
+        width: .8rem;
+        height: .8rem;
+        position: relative;
+        top: -4px;
+    }
+
+    .slider .arrow {
+        width: 1rem;
+        position: relative;
+        top: -12.6vh;
+    }
+
+    .second-overlay {
+        margin-top: -5vh;
+    }
+
+    .download-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .download-text {
+        font-size: .75rem;
+        width: 60vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+
+    .caption-lokasi:nth-child(1) {
+        right: 32vw;
+        top: 35vh;
+    }
+    .caption-lokasi:nth-child(2) {
+        right: 55vw;
+        top: 32vh;
+    }
+    .caption-lokasi:nth-child(3) {
+        right: 54vw;
+        top: 14vh;
+    }
+    .caption-lokasi:nth-child(4) {
+        left: 12vw;
+        top: 12vh;
+    }
+    .caption-lokasi:nth-child(5) {
+        left: 23vw;
+        top: 30vh;
+    }
+    .caption-lokasi:nth-child(6) {
+        left: 4vw;
+        top: 2vh;
+    }
+    .caption-lokasi:nth-child(7) {
+        right: 41vw;
+        top: 16vh;
+    }
+    .caption-lokasi:nth-child(8) {
+        right: 1vw;
+        top: 25vh;
+        flex-direction: row-reverse;
+    }
+
+    .carousel-content {
+        width: 76vw;
+        margin-top: -10vh;
+        overflow-y: hidden;
+    }
+
+    .content {
+        font-size: 1.25rem;
+    }
+
+    .content-image {
+        width: 76vw;
+    }
+
+    .slider {
+        margin-top: 5vh;
+        padding: 0 3.7vw;
+    }
+
+    .line {
+        font-size: 1rem;
+    }
+
+    .second-overlay {
+        margin-top: 5vh;
+    }
+
+
+}
+
+    @media screen and (max-width: 480px) {
+        .caption-lokasi img {
+            max-width: 60%;    
+            height: auto;
+        }
+
+        .pro-desc {
+            font-size: 80% !important;
+            display: block !important;
+            margin: auto !important;
+        }
+
+        .pro-desc .d-flex:last-child {
+            margin-top: -1.7rem;
+        }
+        .pro-desc .d-flex {
+            margin-left: 1rem;
+        }
+
+        .pro-desc img {
+            width: 8px;
+            margin-right: 5px;
+        }
+
+        .caption-lokasi:nth-child(1) {
+            right: 26vw;
+            top: 3vh;
+        }
+        .caption-lokasi:nth-child(2) {
+            right: 42vw;
+            top: 3vh;
+        }
+        .caption-lokasi:nth-child(3) {
+            right: 50vw;
+            top: 10vh;
+        }
+        .caption-lokasi:nth-child(4) {
+            left: 8vw;
+            top: 5vh;
+        }
+        .caption-lokasi:nth-child(5) {
+            left: 27vw;
+            top: 10vh;
+        }
+        .caption-lokasi:nth-child(6) {
+            left: 3vw;
+            top: 0.2vh;
+        }
+        .caption-lokasi:nth-child(7) {
+            right: 23vw;
+            top: 12vh;
+        }
+        .caption-lokasi:nth-child(8) {
+            right: 0.1vw;
+            top: 6vh;
+            flex-direction: row-reverse;
+        }
+    }

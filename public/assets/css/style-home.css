@@ -1,0 +1,260 @@
+* {
+  font-family: Roboto, sans-serif;
+}
+
+/* Home */
+.skema-jurusan {
+    position: relative;
+  }
+  
+  /* navbar */
+  nav div ul.navbar-nav li a.nav-link{
+    color:#151515;
+  }
+  
+  /* .berita-lsp {
+    position: relative;
+  } */
+  
+  .skema-hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* .berita-hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  .skema-hover:hover {
+    background-color: rgba(0,0,0,.5);
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* .berita-hover:hover {
+    background-color: rgba(0,0,0,.5);
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  .berita-lsp img {
+    filter: brightness(1);
+    transition: .2s;
+  }
+  
+  
+  .berita-lsp img:hover {
+    filter: brightness(0.7);
+  }
+  
+  .menu-footer ul {
+    width: 662px;
+  }
+  
+  .menu-footer ul li a {
+    color: black;
+    transition: .2s color;
+  }
+  
+  .menu-footer ul li a:hover {
+    color: salmon;
+  }
+  
+  /* profil visi misi*/
+  #profil .profil{
+    height: 288px;
+    background-image: url("/img/profil/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  
+  #profil .profil::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Warna latar belakang transparan */
+    border-radius: 10px;
+  }
+  
+  #profil .profil .logo{
+    height: 58%;
+    width: min-content;
+    z-index: 1;
+  }
+  
+  #profil .profil .text-profil{
+    color: #fff;
+    z-index: 1;
+  }
+  
+  #profil .content{
+    align-items: center;
+  }
+  
+  #profil .content .logo-lsp{
+    text-align: center;
+  }
+  #profil .content .logo-lsp img{
+    width: 26vw;
+  }
+  
+  /* profil2 */
+  #profil .card{
+    background-color: #D1FF97;
+  }
+  
+  #profil .garis-tengah{
+    height: 65px;
+    background-color: #151515;
+    width: 3px;
+  }
+  
+  #profil .garis{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    transform: scalex(0.5);
+  }
+  
+  #profil .garis .garis-pinggir{
+    background-color: #151515;
+    height: 3px;
+    width: 100%;
+  }
+  
+  /* sertfikasi */
+  #profil .sertifikasi{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  #profil .sertifikasi .kompetensi ul li{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #profil .sertifikasi .card-foot p{
+    margin: auto;
+    width: max-content;
+    background-color: #D1FF97;
+    border-radius: 10px 10px 0 0;
+    font-size: 12px;
+    padding: 5px 20px 5px 20px;
+  }
+  
+  #profil .slider{
+    border-radius: 10px;
+    max-width: 100%;
+  }
+  
+  #profil .skema .table th, #profil .skema td{
+    padding: 20px;
+  }
+  
+  /* detail berita */
+  .berita{
+    max-width: 100%;
+  }
+
+ 
+  
+  /* responsive toggle */
+  @media (min-width: 992px) {
+    .dropdown-menu.manual-end{
+        right: 0; 
+        left: auto;
+    }
+  }
+  
+  @media (max-width: 900px){
+    #profil .profil{
+        flex-direction: column-reverse;
+    }
+  }
+  
+  
+  /* Responsive */
+  
+  @media screen and (max-width: 1200px){
+    .logo-footer {
+        padding-bottom: 2rem;
+    }
+  
+  
+  }
+  
+  @media screen and (max-width: 2000px) {
+    .menu-footer ul li:last-child {
+        margin-right: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .menu-footer ul li:last-child {
+        margin-right: 0rem;
+    }
+  
+  
+  }
+  
+  @media screen and (max-width: 600px){
+    .logo-footer {
+        padding-bottom: 2rem;
+    }
+  
+    .span-menu-footer {
+        display: none;
+    }
+  
+    .menu-footer ul {
+        margin: auto;
+        width: 90%;
+    }
+  
+    .menu-footer ul li{
+        margin-bottom: 1rem;
+    }
+  
+    .menu-footer ul li:last-child{
+        margin-bottom: 0rem;
+    }
+
+    #containerProjects {
+      margin-top: 18rem;
+    }
+  }
+  
+  
