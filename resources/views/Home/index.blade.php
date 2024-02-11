@@ -46,7 +46,7 @@
     <div class="video-header">
 
         <video playsinline autoplay muted loop>
-            <source src="/assets/folder/compro.mp4" type="video/mp4">
+            <source src="/assets/folder/preview2.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         
@@ -178,7 +178,7 @@
 
                 <div class="title" style="margin: 0; padding: 0;">
                     <h3 style="font-family: Roboto, Arial, sans-serif;">Building high-value, cutting edge <br>
-                        System integrator</h3>
+                        system integrator</h3>
                 </div>
     
                 <div class="subtitle">
@@ -188,7 +188,7 @@
 
 
         </div>
-        <div class="row d-flex justify-content-around flex-wrap mx-2">
+        <div class="row d-flex justify-content-around flex-wrap mx-2 mt-5">
             <div class="kotak col-lg-3 mt-4">
                 <div class="isi">
                     <img src="assets/img/value/Vector.png" alt="" class="mb-4">
@@ -228,7 +228,7 @@
             <div class="col-lg-6 service-desc mx-auto">
                 <div class="service-text">
                     <div class="title">
-                        <h5 style="font-family: Roboto, Arial, sans-serif;">Our Services</h5>
+                        <h5 id="titleService">Our Services</h5>
                     </div>
                     {{-- <div class="subtitle">
                         <p style="font-family: Roboto, Arial, sans-serif;">Some of the activity services that can<br>provide. <a href="/services"
@@ -275,12 +275,12 @@
 
 
     <!-- Projects -->
-    <div class="container-fluid projects" id="containerProjects">
+    <div class="container-fluid projects mt-5" id="containerProjects">
         <div class="d-sm-flex justify-content-between mx-5 flex-wrap align-items-end">
             <div class="head-projects">
                 <div class="title d-flex align-items-center justify-content-between">
                     <div class="title">
-                        <h4 id="titleProject">Our Project</h4>
+                        <h4 id="titleProject">Our Projects</h4>
                     </div>
                     {{-- <a href="/projects">
                         <p class="mt-2" style="font-family: Roboto, Arial, sans-serif;">See More <img style="transform: scale(0.5);"
@@ -308,7 +308,7 @@
 
 
                 @foreach ($projects as $item)
-                <a  href="/projects/detail/{{ $item->id }}" style="text-decoration: none;">
+                <a  href="/projects/detail/{{ Crypt::encrypt($item->id) }}" style="text-decoration: none;">
                     <div class="card" id="projectCard">
                         <!-- Card Content -->
                         <div class="d-flex justifyc-content-center align-items-center" style="overflow: hidden; height: 400px;">
@@ -334,19 +334,28 @@
 
                 <!-- Add more cards as needed -->
             </div>
+
+            <div class="row mt-5 text-center">
+                <div class="col-12">
+                    <a href="/assets/folder/project.pdf" class="fs-5" download="project.pdf" style="cursor: pointer; color: #0395D9;">
+                        See more..
+                    </a>
+                </div>
+
+            </div>
         </div>
     </div>
 
 
     <!-- products -->
-    <div class="container-fluid products  carousel slide" id="carouselExampleControls1" data-bs-ride="carousel"
-        style="margin-top: 10rem;">
+    <div class="container-fluid products  carousel slide mt-5" id="carouselExampleControls1" data-bs-ride="carousel">
+        {{--      style="margin-top: 10rem;" --}}
         <div class="products-title text-center">
-            <h2 style="color: #0395D9; font-weight:400; font-family: Roboto, Arial, sans-serif;">Our Products</h2>
+            <h2 id="titleProduct">Our Products</h2>
         </div>
         <div class="products-button row d-flex align-items-center mb-2 text-center">
             <div class="col-lg-4 col-sm-0"></div>
-            <h2 class="col-lg-4 col-sm-8 text-center " id="subtitle-product" style="color: #E28D26;font-style: italic;  font-weight: 700; font-family: Roboto, Arial, sans-serif;">Products we provide.
+            <h2 class="col-lg-4 col-sm-8 text-center " id="subtitleProduct">Products we provide.
             </h2>
             <a href="/products" aria-colspan="col-lg-4 col-sm-4"
                 style="transform: scale(0.6); text-decoration: none; font-family: Roboto, Arial, sans-serif;" class="next btn text-center mx-auto">
@@ -410,7 +419,7 @@
     <!-- end products -->
 
     <!-- Clients -->
-    <div class="container-fluid products clients" style="margin-top: 10rem; font-family: Roboto, Arial, sans-serif;">
+    <div class="container-fluid products clients mt-5" style=" font-family: Roboto, Arial, sans-serif;">
         <div class="products-title text-center">
             <h2 id="titleClient">Our Clients</h2>
         </div>
@@ -456,15 +465,17 @@
     <!-- end ready to work with us -->
 
     <!-- articles -->
-    <div class="container-fluid products Articles" style="margin-top: 10rem; font-family: Roboto, Arial, sans-serif;">
-        <div class="products-title mx-5 text-center text-sm-center text-lg-start">
-            <h5 style="color: #0395D9; font-family: Roboto, Arial, sans-serif;">Article</h5>
+    <div class="container-fluid products Articles mx-5 mt-5" style="font-family: Roboto, Arial, sans-serif;">
+        
+        <div class="products-title text-center text-sm-center text-lg-start">
+            <h5 id="titleArticle">Article</h5>
         </div>
-        <div class="products-button row mx-4 d-flex text-center text-lg-start align-items-center text-sm-center">
-            <h2 class="col-lg-4" style="color: #E28D26;font-style: italic; font-family: Roboto, Arial, sans-serif;">Our Latest
+        
+        <div class="products-button row d-flex text-center text-lg-start align-items-center text-sm-center">
+            <h2 class="col-lg-4" id="subtitleArticle">Our Latest
                 News
             </h2>
-            <div class="col-lg-4 "></div>
+            <div class="col-lg-3"></div>
             <div class="col-lg-4 p-0 text-lg-end">
                 <a href="/articles" style="text-decoration: none; font-family: Roboto, Arial, sans-serif;" class="next btn text-center btn-articles">
                     <span style="font-family: Roboto, Arial, sans-serif;">See More</span>
@@ -472,11 +483,12 @@
                 </a>
             </div>
         </div>
+
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+            <div class="carousel-inner ">
                 @foreach ($articles->chunk(3) as $chunk)
                     <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                        <div class="row mx-4 mt-4">
+                        <div class="row mt-4">
                             @foreach ($chunk as $article)
                                 <div class="col-md-4">  
                                     <div class="">

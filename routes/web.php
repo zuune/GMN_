@@ -72,6 +72,9 @@ Route::get('/services/detail-3', function () {
     return view('Home.detail-service3');
 });
 
+Route::get('/services/detail-4', function () {
+    return view('Home.detail-service4');
+});
 
 // Projects
 Route::get('/projects', function () {

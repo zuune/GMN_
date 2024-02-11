@@ -12,7 +12,12 @@ body, html {
 
 nav {
     z-index: 1000; 
+    /* position: fixed !important;
+    right: 0;
+    left: 0; */
 }
+
+
 
 .video-header {
     position: relative;
@@ -252,6 +257,34 @@ video {
     line-height: 70px !important; /* 145.833% */
 }
 
+#titleService {
+    color: var(--Blue, #0395D9);
+    font-family: Roboto, Arial, sans-serif !important;
+    font-size: 40px !important;
+    /* font-style: italic; */
+    font-weight: 600;
+    line-height: 70px !important; /* 145.833% */
+}
+
+#titleProduct {
+    color: var(--Blue, #0395D9);
+    font-family: Roboto, Arial, sans-serif !important;
+    font-size: 40px !important;
+    /* font-style: italic; */
+    font-weight: 600;
+    line-height: 70px !important; /* 145.833% */
+}
+
+#titleArticle {
+    color: var(--Blue, #0395D9);
+    font-family: Roboto, Arial, sans-serif !important;
+    font-size: 40px !important;
+    /* font-style: italic; */
+    font-weight: 600;
+    line-height: 70px !important; /* 145.833% */
+
+}
+
 
 /* Subtitle */
 #subtitleProject {
@@ -262,6 +295,25 @@ video {
     font-weight: 400;
     line-height: 60px; /* 145.833% */
 }
+
+#subtitleProduct {
+    color: var(--Orange, #E28D26);
+    font-family: Roboto;
+    font-size: 38px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 60px; /* 145.833% */
+}
+
+#subtitleArticle {
+    color: var(--Orange, #E28D26);
+    font-family: Roboto;
+    font-size: 38px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 60px; /* 145.833% */
+}
+
 
 
 
@@ -691,6 +743,8 @@ video {
     #subtitle-product, #subtitle-client {
         font-size: 3rem;
     }
+
+    
 }
 
 @media screen and (max-width: 920px ) {

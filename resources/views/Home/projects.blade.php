@@ -9,7 +9,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/projects.css">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <title>Document</title>
+    <title>Projects</title>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
 
     <div class="wrapper">
         <div class="mt-5">
-            <p style="color: #0395D9;" class="fs-5 mb-0">Our Project</p>
+            <p id="titleProject" class="fs-5 mb-0">Our Project</p>
             <p style="color: #E28D26; font-style:normal;" class="">WORK REFERENCES</p>
         </div>
         <div class="content-container">

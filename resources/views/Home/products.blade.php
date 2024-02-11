@@ -27,16 +27,16 @@
 
     <div class="wrapper">
         <div class="mt-5">
-            <p style="color: #0395D9;" class="fs-5 mb-0">Our Products</p>
+            <p id="titleProduct" class="fs-5 mb-0">Our Products</p>
             <p style="color: #E28D26; font-style:normal;" class="">PRODUCTS WE PROVIDE</p>
         </div>
-        <div class="searching">
+        {{-- <div class="searching">
             <i data-feather="search" class="search"></i>
             <input type="text" class="rounded-5 shadow input fs-5" placeholder="Search">
-        </div>
+        </div> --}}
     </div>
 
-    <div class="content-wrapper">
+    <div class="content-wrapper mt-5">
 
         @foreach ($products as $item)
         <a href="/products/detail/{{ Crypt::encrypt($item->id) }}" class="card-wrapper">

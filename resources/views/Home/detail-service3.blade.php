@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/assets/css/detailServices.css">
   <link rel="stylesheet" href="/assets/css/style-home.css">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <title>Document</title>
+  <title>Service - Construction</title>
 </head>
 
 <body>
@@ -20,25 +20,21 @@
   <div class="img-container">
     <img src="/assets/images/Img (8).png" alt="" class="img-fluid">
     <div class="overlay">
-      <p class="fw-bold fs-4">SERVICES</p>
-      <i class=" fs-3">OUR SERVICES</>
+      <p class="fw-bold fs-1">SERVICES</p>
+      <i class=" fs-5">Construction</i>
     </div>
   </div>
 
   <div class="content">
     <div class="text-content p-5">
-      <p><span style="color: #E28D26;">Engineering, Procurement,
-        Construction, and System Integration</span>
+      <p class="fs-3"><span style="color: #E28D26; font-weight: 600;">Construction</span>
         <span style="font-size: 19px">
-            EPC and Integration services, including systems of photovoltaic, solar thermal collector, wind, micro-hydro, and biomass. <br>
-            Procurement and installation of conversion and energy conservation system, i.e. cogeneration power plant (combined heat and power - CHP), and waste heat recovery utilization. <br>
-            Implementation and/or supervision of energy conservation program. <br>
-            Procurement and installation of instrumentation system for energy   conversion and conservation. <br>
-        </span>    
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, omnis inventore, libero maiores officiis assumenda autem fuga iste debitis harum asperiores, soluta error nemo quam eius explicabo maxime nulla dolor?<br>
+        </span>
     </p>
     </div>
 
-      <img src="/assets/icons/wrench2.png" alt="Engineering" class="img-fluid p-5">
+      <img src="/assets/icons/work2.png" alt="Engineering" class="img-fluid p-5">
 
   </div>
 

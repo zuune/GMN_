@@ -33,16 +33,19 @@
     </a>
     <a href="/services/detail-2" style="text-decoration: none;"
       class="card d-flex justify-content-center align-items-center shadow p-3">
-      <img src="/assets/icons/work2.png" alt="" class="img-fluid">
-      <p style="font-size: 16px" class="fw-semibold mt-5">Energy Management and
-        Conservation</p>
+      <img src="/assets/icons/procurement2.png" alt="" class="img-fluid">
+      <p style="font-size: 16px" class="fw-semibold mt-5">Procurement</p>
     </a>
     <a href="/services/detail-3" style="text-decoration: none;"
       class="card d-flex justify-content-center align-items-center shadow p-3">
-      <img src="/assets/icons/wrench2.png" alt="" class="img-fluid">
-      <p style="font-size: 16px" class="fw-semibold mt-5">Engineering, Procurement,
-        Construction, and System Integration</p>
+      <img src="/assets/icons/work2.png" alt="" class="img-fluid">
+      <p style="font-size: 16px" class="fw-semibold mt-5">Construction</p>
     </a>
+    <a href="/services/detail-4" style="text-decoration: none;"
+    class="card d-flex justify-content-center align-items-center shadow p-3">
+    <img src="/assets/icons/wrench2.png" alt="" class="img-fluid">
+    <p style="font-size: 16px" class="fw-semibold mt-5">Maintenance</p>
+  </a>
   </div>
 
   @include('Home.Partials.footer')

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/assets/css/detailServices.css">
   <link rel="stylesheet" href="/assets/css/style-home.css">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <title>Document</title>
+  <title>Service - Procurement</title>
 </head>
 
 <body>
@@ -37,7 +37,7 @@ Development of computer-based energy monitoring and accounting systems. <br>
     </p>
     </div>
 
-      <img src="/assets/icons/work2.png" alt="Engineering" class="img-fluid p-5">
+      <img src="/assets/icons/procurement3.png" alt="Engineering" class="img-fluid p-5">
 
   </div>
 
