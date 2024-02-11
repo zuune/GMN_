@@ -239,22 +239,35 @@
                 </div>
                 <div class="service-kotak">
                     <div class="row">
-                        <div class="col-sm-5 kotak k-kecil ">
-                            <p style="font-family: Roboto, Arial, sans-serif;">Engineering</p>
-                        </div>
+                        <a href="/services/detail-1" style="text-decoration: none;" class="col-sm-5 kotak k-kecil ">
+                            <div>
+                                <p style="font-family: Roboto, Arial, sans-serif;">Engineering</p>
+                            </div>
+                        </a>
+                   
                         <div class="col-sm-1"></div>
-                        <div class="col-sm-5 kotak k-kecil">
-                            <p style="font-family: Roboto, Arial, sans-serif;">Procurement</p>
-                        </div>
+
+                        <a href="/services/detail-2" style="text-decoration: none;" class="col-sm-5 kotak k-kecil ">
+                            <div>
+                                <p style="font-family: Roboto, Arial, sans-serif;">Procurement</p>
+                            </div>
+                        </a>
+                        
                     </div>
                     <div class="row mt-4">
-                        <div class="col-sm-5 kotak k-kecil">
-                            <p style="font-family: Roboto, Arial, sans-serif;">Construction</p>
-                        </div>
+                        <a href="/services/detail-3" style="text-decoration: none;" class="col-sm-5 kotak k-kecil">
+                            <div>
+                                <p style="font-family: Roboto, Arial, sans-serif;">Construction</p>
+                            </div>
+                        </a>
+                
                         <div class="col-sm-1"></div>
-                        <div class="col-sm-5 kotak k-kecil">
-                            <p style="font-family: Roboto, Arial, sans-serif;">Maintenance</p>
-                        </div>
+                        <a href="/services/detail-4" style="text-decoration: none;" class="col-sm-5 kotak k-kecil">
+                            <div>
+                                <p style="font-family: Roboto, Arial, sans-serif;">Maintenance</p>
+                            </div>
+                        </a>
+                        
                     </div>
                     {{-- <div class="row mt-4">
                         <div class="col-sm-5 kotak k-kecil">
@@ -293,10 +306,10 @@
             </div>
 
             <div class="direction">
-                <button style="transform: scale(0.8);" class="previous btn" onclick="prevSlide()">
+                <button style="transform: scale(0.6);" class="previous btn" onclick="prevSlide()">
                     <img src="assets/img/arrow-left.png" alt="">
                 </button>
-                <button style="transform: scale(0.8);" class="next btn text-center" onclick="nextSlide()">
+                <button style="transform: scale(0.6);" class="next btn text-center" onclick="nextSlide()">
                     <span style="font-family: Roboto, Arial, sans-serif;">Next</span>
                     <img class="ms-3" src="assets/img/arrow-right.png" alt="">
                 </button>
@@ -311,7 +324,7 @@
                 <a  href="/projects/detail/{{ Crypt::encrypt($item->id) }}" style="text-decoration: none;">
                     <div class="card" id="projectCard">
                         <!-- Card Content -->
-                        <div class="d-flex justifyc-content-center align-items-center" style="overflow: hidden; height: 400px;">
+                        <div class="d-flex justify-content-center align-items-center" style="overflow: hidden; height: 400px;">
                             <img src="{{ asset($item->image->first()->image) }}" class="card-img-top" alt="..." style="width: 100%;">
 
                         </div>

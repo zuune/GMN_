@@ -59,7 +59,9 @@
                   </span>
                   <div class="card-description">
                     <p class="fs-3 mb-1">{{ count($products) }}</p>
-                    <div class="date">{{ $products->last()->created_at->format('d F Y') }}</div>
+                    <div class="date">@isset($products->created_at)
+                      {{ $products->last()->created_at->format('d F Y') }}
+                    @endisset</div>
                   </div>
                 </div>
 
@@ -74,7 +76,9 @@
                 </span>
                 <div class="card-description">
                   <p class="fs-3 mb-1">{{ count($articles) }}</p>
-                  <div class="date">{{ $articles->last()->created_at->format('d F Y') }}</div>
+                  <div class="date">@isset($articles->created_at)
+                    {{ $articles->last()->created_at->format('d F Y') }}
+                  @endisset</div>
                 </div>
               </div>
 
@@ -89,7 +93,9 @@
               </span>
               <div class="card-description">
                 <p class="fs-3 mb-1">{{ count($projects) }}</p>
-                <div class="date">{{ $projects->last()->created_at->format('d F Y') }}</div>
+                <div class="date">@isset($projects->created_at)
+                  {{ $projects->last()->created_at->format('d F Y') }}                    
+                @endisset</div>
               </div>
             </div>
 

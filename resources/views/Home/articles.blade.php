@@ -34,7 +34,7 @@
             <i data-feather="search" class="search"></i>
             <input type="text" class="rounded-5 shadow input fs-5" placeholder="Search">
         </div> --}}
-        <div class="card-wrapper mt-5">
+        <div class="card-wrapper mt-3">
 
             @foreach ($articles as $item)
             <a href="/articles/detail/{{ Crypt::encrypt($item->id) }}" style="text-decoration: none;" class="card-content">

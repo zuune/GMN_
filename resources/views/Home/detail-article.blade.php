@@ -20,8 +20,8 @@
   <div class="img-container">
     <img src="/assets/image/Img.png" alt="" class="img-fluid">
     <div class="overlay">
-      <p class="fw-bold fs-4">ARTICLE</p>
-      <i class=" fs-3">{{ $article->title }}</>
+      <p class="fw-bold fs-1">ARTICLE</p>
+      <i class=" fs-5 ">{{ $article->title }}</>
     </div>
   </div>
 
